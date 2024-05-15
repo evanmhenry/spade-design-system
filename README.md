@@ -36,3 +36,22 @@ yarn install
 yarn dev
 ```
 
+## TODO
+- [ ] implement Shad/cn
+- [ ] implement TanStack query
+    - [ ] implement useQuery
+    - [ ] implement useMutation
+- [ ] implement React Router
+- [ ] implement axios
+- [ ] implement error handling for basic API calls
+- [ ] add a mock API
+- [ ] add environment variables
+- [ ] implement testing
+- [ ] implement security to the frontend
+    - [ ] implement secured vs unsecured routing
+    - [ ] implement calling a secured API
+    - [ ] add login 
+- [ ] implement a toggle for lightmode / darkmode
+- [ ] implement TailwindCSS
+
+
