@@ -3,20 +3,10 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
-} from "./components/card";
-import { Input } from "./components/Input";
-import { Label } from "./components/Label";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "./components/Select";
-import ThemeToggle from "./components/ThemeToggle";
+} from "./components/Card";
+import ThemeToggle from "./components/Theming/ThemeToggle";
 
 const App = () => {
   return (
