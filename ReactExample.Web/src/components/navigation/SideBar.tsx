@@ -1,15 +1,42 @@
 import { Link, useLocation } from "react-router-dom";
-import { Clipboard, Settings } from "lucide-react";
-import Logo from "../../assets/logo.svg";
+import {
+  BarChartBigIcon,
+  Settings,
+  Square,
+  SquareCheck,
+  Table,
+  TextCursorInput,
+} from "lucide-react";
+import Logo from "@/assets/logo.svg";
 
 const SideMenu = () => {
   const location = useLocation();
 
   const navOptions = [
     {
-      label: "Dashboard",
-      path: "/dashboard",
-      icon: <Clipboard className="h-5 w-5" />,
+      label: "Buttons",
+      path: "/buttons",
+      icon: <SquareCheck className="h-5 w-5" />,
+    },
+    {
+      label: "Charts",
+      path: "/charts",
+      icon: <BarChartBigIcon className="h-5 w-5" />,
+    },
+    {
+      label: "Data Table",
+      path: "/data-table",
+      icon: <Table className="h-5 w-5" />,
+    },
+    {
+      label: "Cards",
+      path: "/cards",
+      icon: <Square className="h-5 w-5" />,
+    },
+    {
+      label: "Inputs",
+      path: "/inputs",
+      icon: <TextCursorInput className="h-5 w-5" />,
     },
   ];
 

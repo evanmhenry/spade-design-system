@@ -1,11 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "./MainLayout";
-import DashboardPage from "@/pages/DashboardPage";
 import SettingsPage from "@/pages/SettingsPage";
 import ErrorPage from "@/pages/ErrorPage";
 import ChartsPage from "@/pages/ChartsPage";
 import CardsPage from "@/pages/CardsPage";
 import DataTablePage from "@/pages/DataTablePage";
+import InputsPage from "@/pages/InputsPage";
+import ButtonsPage from "@/pages/ButtonsPage";
 
 const BrowserRouter = createBrowserRouter([
   {
@@ -13,8 +14,8 @@ const BrowserRouter = createBrowserRouter([
     element: <MainLayout />,
     children: [
       {
-        path: "/dashboard",
-        element: <DashboardPage />,
+        path: "/buttons",
+        element: <ButtonsPage />,
       },
       {
         path: "/charts",
@@ -27,6 +28,10 @@ const BrowserRouter = createBrowserRouter([
       {
         path: "/cards",
         element: <CardsPage />,
+      },
+      {
+        path: "/inputs",
+        element: <InputsPage />,
       },
       {
         path: "settings",
