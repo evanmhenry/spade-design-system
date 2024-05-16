@@ -1,17 +1,15 @@
-import { Button } from "./components/Button";
+import { Button } from "../components/Button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "./components/Card";
-import ThemeToggle from "./components/Theming/ThemeToggle";
+} from "../components/Card";
 
-const App = () => {
+const DashboardPage = () => {
   return (
-    <div className="flex flex-col items-center gap-4 h-screen justify-center">
-      <ThemeToggle />
+    <div className="flex flex-col items-center gap-4 justify-center">
       <Card className="w-[350px]">
         <CardHeader>
           <CardTitle>Button Variants</CardTitle>
@@ -34,4 +32,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default DashboardPage;
