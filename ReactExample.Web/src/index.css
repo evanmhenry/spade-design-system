@@ -69,19 +69,19 @@
     --accent: 240 3.7% 15.9%;
     --accent-foreground: 0 0% 98%;
 
-    --success: 142 71% 35%;
+    --success: 142 53% 40%; /* Adjusted green */
     --success-foreground: 0 0% 98%;
 
-    --warning: 48 96% 89%;
+    --warning: 48 80% 50%; /* Adjusted yellow */
     --warning-foreground: 38 92% 50%;
 
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 0 62.8% 40%; /* Adjusted red */
     --destructive-foreground: 0 0% 98%;
 
-    --purple: 258 90% 66%;
+    --purple: 258 60% 50%; /* Adjusted purple */
     --purple-foreground: 0 0% 98%;
 
-    --blue: 217 91% 60%;
+    --blue: 217 72% 50%; /* Adjusted blue */
     --blue-foreground: 0 0% 98%;
 
     --border: 240 3.7% 15.9%;
