@@ -1,11 +1,11 @@
-import { Button } from "../components/Button";
+import { Button } from "../components/ui/Button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "../components/Card";
+} from "../components/ui/Card";
 
 const DashboardPage = () => {
   return (

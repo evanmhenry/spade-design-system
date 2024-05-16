@@ -5,8 +5,8 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "../DropdownMenu";
-import { Avatar, AvatarFallback } from "../Avatar";
+} from "../ui/DropdownMenu";
+import { Avatar, AvatarFallback } from "../ui/Avatar";
 import SideBar from "./SideBar";
 import ThemeToggle from "../theming/ThemeToggle";
 
