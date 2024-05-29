@@ -1,7 +1,5 @@
-import React from "react";
-
 const DataTablePage = () => {
-  return <div>DataTablePage</div>;
-};
+	return <div>DataTablePage</div>
+}
 
-export default DataTablePage;
+export default DataTablePage

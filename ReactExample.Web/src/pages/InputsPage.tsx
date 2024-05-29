@@ -1,8 +1,7 @@
-import { Input } from "@/components/ui/Input";
-import React from "react";
+import { Input } from '@/components/ui/Input'
 
 const InputsPage = () => {
-  return <Input placeholder="Search..." className="w-64" />;
-};
+	return <Input placeholder='Search...' className='w-64' />
+}
 
-export default InputsPage;
+export default InputsPage
