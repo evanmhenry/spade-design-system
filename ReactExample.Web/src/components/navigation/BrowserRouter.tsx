@@ -7,7 +7,7 @@ import CardsPage from '@/pages/CardsPage'
 import DataTablePage from '@/pages/DataTablePage'
 import InputsPage from '@/pages/InputsPage'
 import ButtonsPage from '@/pages/ButtonsPage'
-import LandingPage from '@/pages/LandingPage'
+import LandingPage from '@/pages/landing-page/LandingPage'
 
 const BrowserRouter = createBrowserRouter([
 	{
