@@ -3,6 +3,9 @@ import { Button } from '@/components/ui/Button'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/DropdownMenu'
 import { useTheme } from '@/components/theming/ThemeProvider'
 
+// TODO: add variants: 'select' | 'toggle'
+// select: dropdown menu with options
+// toggle: button that toggles between options
 const ThemeToggle = () => {
 	const { setTheme } = useTheme()
 
