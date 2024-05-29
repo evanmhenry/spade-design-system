@@ -2,6 +2,7 @@ import { BoxIcon } from 'lucide-react'
 import { Dispatch, SetStateAction } from 'react'
 import { Link } from 'react-router-dom'
 import HamburgerMenu from './HamburgerMenu'
+import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, navigationMenuTriggerStyle } from '@/components/ui/NavigationMenu'
 
 type HeaderProps = {
 	isOpen: boolean
@@ -26,11 +27,27 @@ const docsItems = [
 
 const Header = ({ isOpen, setIsOpen }: HeaderProps) => {
 	return (
-		<header className={`fixed top-0 w-full border-b transition-all py-4 duration-300 bg-background ${isOpen ? 'h-screen' : 'h-16'}`}>
+		<header className={`fixed top-0 w-full border-b transition-all duration-300 bg-background ${isOpen ? 'h-screen' : 'h-16'}`}>
 			<div className='container'>
-				<div id='menu' className='flex justify-between w-full items-center'>
+				<div className='flex justify-between w-full items-center h-16'>
 					<h1 className='text-2xl font-bold text-primary'>React Pattern</h1>
-					<HamburgerMenu isOpen={isOpen} setIsOpen={setIsOpen} />
+					<HamburgerMenu isOpen={isOpen} setIsOpen={setIsOpen} className='md:hidden' />
+					<div className='hidden md:flex gap-4'>
+						<NavigationMenu>
+							<NavigationMenuList>
+								<NavigationMenuItem>
+									<Link to='/buttons'>
+										<NavigationMenuLink className={navigationMenuTriggerStyle()}>Components</NavigationMenuLink>
+									</Link>
+								</NavigationMenuItem>
+								<NavigationMenuItem>
+									<Link to='/docs'>
+										<NavigationMenuLink className={navigationMenuTriggerStyle()}>Documentation</NavigationMenuLink>
+									</Link>
+								</NavigationMenuItem>
+							</NavigationMenuList>
+						</NavigationMenu>
+					</div>
 				</div>
 				<div className={`overflow-hidden transition-all duration-300 ${isOpen ? 'h-full' : 'max-h-0'} w-full gap-4 pt-10`}>
 					<div className='flex flex-col gap-10'>
