@@ -10,7 +10,7 @@ import { Avatar, AvatarFallback } from "../ui/Avatar";
 import SideBar from "./SideBar";
 import ThemeToggle from "../theming/ThemeToggle";
 
-const MainLayout = () => {
+const AppLayout = () => {
   return (
     <div className="flex w-screen items-start">
       <SideBar />
@@ -47,4 +47,4 @@ const MainLayout = () => {
   );
 };
 
-export default MainLayout;
+export default AppLayout;
