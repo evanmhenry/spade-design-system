@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom'
 import { LogOut, User } from 'lucide-react'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '../ui/DropdownMenu'
 import { Avatar, AvatarFallback } from '../ui/Avatar'
-import SideBar from './SideBar'
+import SideBar from './SideMenu'
 import ThemeToggle from '../theming/ThemeToggle'
 
 const AppLayout = () => {
