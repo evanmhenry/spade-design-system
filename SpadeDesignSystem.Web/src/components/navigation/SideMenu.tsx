@@ -1,9 +1,12 @@
 import { Link, useLocation } from 'react-router-dom'
 import { BarChartBigIcon, Settings, Square, SquareCheck, Table, TextCursorInput } from 'lucide-react'
-import Logo from '@/assets/logo.svg'
+import LightLogo from '@/assets/design-system-logo-light.svg'
+import DarkLogo from '@/assets/design-system-logo-dark.svg'
+import { useTheme } from '../theming/ThemeProvider'
 
 const SideMenu = () => {
 	const location = useLocation()
+	const { theme } = useTheme()
 
 	const navOptions = [
 		{
@@ -43,7 +46,7 @@ const SideMenu = () => {
 	return (
 		<div className='flex h-screen flex-col w-64 border-r flex-shrink-0'>
 			<div className='p-3 border-b h-14 flex-shrink-0'>
-				<img alt='Logo' className='h-8 flex-none' src={Logo} />
+				<img alt='Logo' className='h-8 flex-none' src={theme === 'dark' ? DarkLogo : LightLogo} />
 			</div>
 			<div className='p-3 h-full'>
 				{navOptions.map((option) => (
