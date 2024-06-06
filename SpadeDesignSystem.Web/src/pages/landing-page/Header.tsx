@@ -3,6 +3,9 @@ import { Dispatch, SetStateAction } from 'react'
 import { Link } from 'react-router-dom'
 import HamburgerMenu from './HamburgerMenu'
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, navigationMenuTriggerStyle } from '@/components/ui/NavigationMenu'
+import LightLogo from '@/assets/design-system-logo-light.svg'
+import DarkLogo from '@/assets/design-system-logo-dark.svg'
+import { useTheme } from '@/components/theming/ThemeProvider'
 
 type HeaderProps = {
 	isOpen: boolean
@@ -26,11 +29,13 @@ const docsItems = [
 ]
 
 const Header = ({ isOpen, setIsOpen }: HeaderProps) => {
+	const { theme } = useTheme()
+
 	return (
 		<header className={`fixed top-0 w-full border-b transition-all duration-300 bg-background ${isOpen ? 'h-screen' : 'h-16'}`}>
 			<div className='container'>
 				<div className='flex justify-between w-full items-center h-16'>
-					<h1 className='text-2xl font-bold text-primary'>React Pattern</h1>
+					<img alt='Logo' className='h-8 flex-none' src={theme === 'dark' ? DarkLogo : LightLogo} />
 					<HamburgerMenu isOpen={isOpen} setIsOpen={setIsOpen} className='md:hidden' />
 					<div className='hidden md:flex gap-4'>
 						<NavigationMenu>
@@ -49,7 +54,7 @@ const Header = ({ isOpen, setIsOpen }: HeaderProps) => {
 						</NavigationMenu>
 					</div>
 				</div>
-				<div className={`overflow-hidden transition-all duration-300 ${isOpen ? 'h-full' : 'max-h-0'} w-full gap-4 pt-10`}>
+				<div className={`overflow-hidden transition-all duration-300 ${isOpen ? 'h-full' : 'max-h-0'} w-full gap-4 pt-10 bg-background`}>
 					<div className='flex flex-col gap-10'>
 						<div className='flex flex-col gap-4'>
 							<h3 className='text-sm text-muted-foreground'>Docs</h3>
