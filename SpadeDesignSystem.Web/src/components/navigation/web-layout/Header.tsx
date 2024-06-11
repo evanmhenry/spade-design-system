@@ -1,6 +1,6 @@
 import { BoxIcon } from 'lucide-react'
 import { Dispatch, SetStateAction } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import HamburgerMenu from './HamburgerMenu'
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, navigationMenuTriggerStyle } from '@/components/ui/NavigationMenu'
 import LightLogo from '@/assets/brand/design-system-logo-light.svg'
@@ -30,13 +30,14 @@ const docsItems = [
 
 const Header = ({ isOpen, setIsOpen }: HeaderProps) => {
 	const { theme } = useTheme()
-	const navigate = useNavigate()
 
 	return (
 		<header className={`fixed top-0 w-full border-b transition-all duration-300 bg-background ${isOpen ? 'h-screen' : 'h-16'}`}>
 			<div className='container max-w-screen-2xl'>
 				<div className='flex justify-between w-full items-center h-16'>
-					<img alt='Logo' className='h-8 flex-none hover:cursor-pointer' src={theme === 'dark' ? DarkLogo : LightLogo} onClick={() => navigate('/')} />
+					<a href='/'>
+						<img alt='Logo' className='h-8 flex-none hover:cursor-pointer' src={theme === 'dark' ? DarkLogo : LightLogo} />
+					</a>
 					<HamburgerMenu isOpen={isOpen} setIsOpen={setIsOpen} className='md:hidden' />
 					<div className='hidden md:flex gap-4'>
 						<NavigationMenu>
@@ -59,8 +60,8 @@ const Header = ({ isOpen, setIsOpen }: HeaderProps) => {
 					<div className='flex flex-col gap-10'>
 						<div className='flex flex-col gap-4'>
 							<h3 className='text-sm text-muted-foreground'>Docs</h3>
-							{docsItems.map((item, index) => (
-								<div key={index} className='flex gap-2 items-center'>
+							{docsItems.map((item) => (
+								<div key={item.name} className='flex gap-2 items-center'>
 									<item.icon size={24} />
 									<Link to={item.path}>{item.name}</Link>
 								</div>
@@ -68,8 +69,8 @@ const Header = ({ isOpen, setIsOpen }: HeaderProps) => {
 						</div>
 						<div className='flex flex-col gap-4'>
 							<h3 className='text-sm text-muted-foreground'>Components</h3>
-							{menuItems.map((item, index) => (
-								<div key={index} className='flex gap-2 items-center'>
+							{menuItems.map((item) => (
+								<div key={item.name} className='flex gap-2 items-center'>
 									<item.icon size={24} />
 									<Link to={item.path}>{item.name}</Link>
 								</div>
