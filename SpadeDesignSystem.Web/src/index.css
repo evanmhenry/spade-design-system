@@ -102,3 +102,9 @@
 	}
 }
 
+
+@layer components {
+	.container {
+	  @apply px-4 sm:px-8;
+	}
+  }

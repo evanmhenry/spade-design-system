@@ -1,5 +1,5 @@
 import { createBrowserRouter } from 'react-router-dom'
-import AppLayout from './AppLayout'
+import AppLayout from './app-layout/AppLayout'
 import SettingsPage from '@/pages/SettingsPage'
 import ErrorPage from '@/pages/ErrorPage'
 import ChartsPage from '@/pages/ChartsPage'
@@ -8,11 +8,30 @@ import DataTablePage from '@/pages/DataTablePage'
 import InputsPage from '@/pages/InputsPage'
 import ButtonsPage from '@/pages/ButtonsPage'
 import LandingPage from '@/pages/landing-page/LandingPage'
+import GettingStartedPage from '@/pages/docs/GettingStartedPage'
+import WebLayout from './web-layout/WebLayout'
+import DocsLayout from './docs-layout/DocsLayout'
 
 const BrowserRouter = createBrowserRouter([
 	{
 		path: '/',
-		element: <LandingPage />,
+		element: <WebLayout />,
+		children: [
+			{
+				path: '',
+				element: <LandingPage />,
+			},
+			{
+				path: 'docs',
+				element: <DocsLayout />,
+				children: [
+					{
+						path: '',
+						element: <GettingStartedPage />,
+					},
+				],
+			}
+		],
 		errorElement: <ErrorPage />,
 	},
 	{

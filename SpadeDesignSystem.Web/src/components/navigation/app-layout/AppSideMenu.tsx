@@ -2,9 +2,9 @@ import { Link, useLocation } from 'react-router-dom'
 import { BarChartBigIcon, Settings, Square, SquareCheck, Table, TextCursorInput } from 'lucide-react'
 import LightLogo from '@/assets/design-system-logo-light.svg'
 import DarkLogo from '@/assets/design-system-logo-dark.svg'
-import { useTheme } from '../theming/ThemeProvider'
+import { useTheme } from '../../theming/ThemeProvider'
 
-const SideMenu = () => {
+const AppSideMenu = () => {
 	const location = useLocation()
 	const { theme } = useTheme()
 
@@ -78,4 +78,4 @@ const SideMenu = () => {
 	)
 }
 
-export default SideMenu
+export default AppSideMenu

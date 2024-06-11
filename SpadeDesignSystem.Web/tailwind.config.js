@@ -10,10 +10,7 @@ export const prefix = "";
 export const theme = {
   container: {
     center: true,
-    padding: {
-      DEFAULT: "1rem",
-      md: "2rem",
-    }, screens: {
+    screens: {
       "2xl": "1400px",
     },
   },

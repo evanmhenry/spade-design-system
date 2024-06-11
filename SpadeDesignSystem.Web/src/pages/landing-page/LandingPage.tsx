@@ -1,15 +1,10 @@
 import { Button } from '@/components/ui/Button'
-import { useState } from 'react'
-import Header from './Header'
 import { Link } from 'react-router-dom'
 
 const LandingPage = () => {
-	const [isOpen, setIsOpen] = useState(false)
-
 	return (
-		<div className='h-dvh flex flex-col items-center'>
-			<Header isOpen={isOpen} setIsOpen={setIsOpen} />
-			<div className='pt-16 bg-background h-dvh bg-orange-100'>
+		<>
+			<div className='pt-16 bg-background bg-orange-100'>
 				<div className='max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8'>
 					<div className='text-center'>
 						<h2 className='text-3xl font-extrabold text-primary sm:text-4xl'>Spade Design System</h2>
@@ -33,14 +28,7 @@ const LandingPage = () => {
 					))}
 				</div>
 			</section> */}
-			<footer className='relative border-t z-10 w-full'>
-				<div className='max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8'>
-					<div className='text-center'>
-						<p className='text-sm text-muted-foreground'>Spade Design System</p>
-					</div>
-				</div>
-			</footer>
-		</div>
+		</>
 	)
 }
 

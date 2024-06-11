@@ -1,7 +1,7 @@
 import { BoxIcon } from 'lucide-react'
 import { Dispatch, SetStateAction } from 'react'
-import { Link } from 'react-router-dom'
-import HamburgerMenu from './HamburgerMenu'
+import { Link, useNavigate } from 'react-router-dom'
+import HamburgerMenu from '../../../pages/landing-page/HamburgerMenu'
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, navigationMenuTriggerStyle } from '@/components/ui/NavigationMenu'
 import LightLogo from '@/assets/design-system-logo-light.svg'
 import DarkLogo from '@/assets/design-system-logo-dark.svg'
@@ -30,12 +30,13 @@ const docsItems = [
 
 const Header = ({ isOpen, setIsOpen }: HeaderProps) => {
 	const { theme } = useTheme()
+	const navigate = useNavigate()
 
 	return (
 		<header className={`fixed top-0 w-full border-b transition-all duration-300 bg-background ${isOpen ? 'h-screen' : 'h-16'}`}>
-			<div className='container'>
+			<div className='container max-w-screen-2xl'>
 				<div className='flex justify-between w-full items-center h-16'>
-					<img alt='Logo' className='h-8 flex-none' src={theme === 'dark' ? DarkLogo : LightLogo} />
+					<img alt='Logo' className='h-8 flex-none hover:cursor-pointer' src={theme === 'dark' ? DarkLogo : LightLogo} onClick={() => navigate('/')} />
 					<HamburgerMenu isOpen={isOpen} setIsOpen={setIsOpen} className='md:hidden' />
 					<div className='hidden md:flex gap-4'>
 						<NavigationMenu>
@@ -46,7 +47,7 @@ const Header = ({ isOpen, setIsOpen }: HeaderProps) => {
 									</Link>
 								</NavigationMenuItem>
 								<NavigationMenuItem>
-									<Link to='/docs'>
+									<Link to='/getting-started'>
 										<NavigationMenuLink className={navigationMenuTriggerStyle()}>Documentation</NavigationMenuLink>
 									</Link>
 								</NavigationMenuItem>
@@ -54,7 +55,7 @@ const Header = ({ isOpen, setIsOpen }: HeaderProps) => {
 						</NavigationMenu>
 					</div>
 				</div>
-				<div className={`overflow-hidden transition-all duration-300 ${isOpen ? 'h-full' : 'max-h-0'} w-full gap-4 pt-10 bg-background`}>
+				<div className={`overflow-hidden transition-all duration-300 ${isOpen ? 'h-full' : 'hidden'} w-full gap-4 pt-10 bg-background`}>
 					<div className='flex flex-col gap-10'>
 						<div className='flex flex-col gap-4'>
 							<h3 className='text-sm text-muted-foreground'>Docs</h3>
