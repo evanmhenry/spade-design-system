@@ -1,7 +1,7 @@
 import { BoxIcon } from 'lucide-react'
 import { Dispatch, SetStateAction } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import HamburgerMenu from '../../../pages/landing-page/HamburgerMenu'
+import HamburgerMenu from './HamburgerMenu'
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, navigationMenuTriggerStyle } from '@/components/ui/NavigationMenu'
 import LightLogo from '@/assets/brand/design-system-logo-light.svg'
 import DarkLogo from '@/assets/brand/design-system-logo-dark.svg'
