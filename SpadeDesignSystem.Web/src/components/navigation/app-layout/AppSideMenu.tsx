@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom'
 import { BarChartBigIcon, Settings, Square, SquareCheck, Table, TextCursorInput } from 'lucide-react'
-import LightLogo from '@/assets/design-system-logo-light.svg'
-import DarkLogo from '@/assets/design-system-logo-dark.svg'
+import LightLogo from '@/assets/brand/design-system-logo-light.svg'
+import DarkLogo from '@/assets/brand/design-system-logo-dark.svg'
 import { useTheme } from '../../theming/ThemeProvider'
 
 const AppSideMenu = () => {
