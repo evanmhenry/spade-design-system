@@ -32,7 +32,7 @@ const Header = ({ isOpen, setIsOpen }: HeaderProps) => {
 	const { theme } = useTheme()
 
 	return (
-		<header className={`fixed top-0 w-full border-b transition-all duration-300 bg-background ${isOpen ? 'h-screen' : 'h-16'}`}>
+		<header className={`z-50 fixed top-0 w-full border-b transition-all duration-300 bg-background ${isOpen ? 'h-screen' : 'h-16'}`}>
 			<div className='container max-w-screen-2xl'>
 				<div className='flex justify-between w-full items-center h-16'>
 					<a href='/'>

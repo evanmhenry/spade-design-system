@@ -80,14 +80,14 @@ const Footer = () => {
 						{ label: 'Report a bug', link: '/report-bug' },
 					]}
 				/>
-				{/* <FooterLinks
-                            title='Company'
-                            items={[
-                                { label: 'Community', link: '/community' },
-                                { label: 'Careers', link: '/careers' },
-                                { label: 'Contact', link: '/contact' },
-                            ]}
-                        /> */}
+				<FooterLinks
+					title='Company'
+					items={[
+						{ label: 'Community', link: '/community' },
+						{ label: 'Careers', link: '/careers' },
+						{ label: 'Contact', link: '/contact' },
+					]}
+				/>
 				<FooterLinks
 					title='Resources'
 					items={[
