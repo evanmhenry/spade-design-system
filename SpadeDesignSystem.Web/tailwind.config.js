@@ -10,6 +10,10 @@ export const prefix = "";
 export const theme = {
   container: {
     center: true,
+    padding: {
+      DEFAULT: "1rem",
+      md: "2rem",
+    }, 
     screens: {
       "2xl": "1400px",
     },
@@ -89,6 +93,29 @@ export const theme = {
       "accordion-down": "accordion-down 0.2s ease-out",
       "accordion-up": "accordion-up 0.2s ease-out",
     },
+    backgroundImage: {
+      'brand-gradient': 'linear-gradient(to right, #2DD4BF, #34d399)',
+    },
   },
 };
-export const plugins = [];
+
+export const plugins = [
+  function({ addUtilities }) {
+    const newUtilities = {
+      '.bg-brand-gradient': {
+        'background-image': 'linear-gradient(to right, #2DD4BF, #34d399)',
+      },
+      '.bg-brand-gradient-hover': { 
+        'background-image': 'linear-gradient(to right, #14b8a6, #10b981)',
+      },
+      '.text-brand-gradient': {
+        'background-image': 'linear-gradient(to right, #2DD4BF, #34d399)',
+        '-webkit-background-clip': 'text',
+        'background-clip': 'text',
+        'color': 'transparent',
+      },
+    }
+
+    addUtilities(newUtilities, ['responsive', 'hover']);
+  },
+];
