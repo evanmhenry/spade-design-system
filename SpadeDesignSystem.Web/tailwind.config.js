@@ -94,7 +94,7 @@ export const theme = {
       "accordion-up": "accordion-up 0.2s ease-out",
     },
     backgroundImage: {
-      'brand-gradient': 'linear-gradient(to right, #2DD4BF, #34d399)',
+      'brand-gradient': 'linear-gradient(135deg, #F59E0B 0%, #F97316 50%, #EF4444 100%)',
     },
   },
 };
@@ -103,13 +103,13 @@ export const plugins = [
   function({ addUtilities }) {
     const newUtilities = {
       '.bg-brand-gradient': {
-        'background-image': 'linear-gradient(to right, #2DD4BF, #34d399)',
+        'background-image': 'linear-gradient(135deg, #F59E0B 0%, #F97316 50%, #EF4444 100%)',
       },
       '.bg-brand-gradient-hover': { 
-        'background-image': 'linear-gradient(to right, #14b8a6, #10b981)',
+        'background-image': 'linear-gradient(135deg, #d97706 0%, #ea580c 50%, #dc2626 100%)',
       },
       '.text-brand-gradient': {
-        'background-image': 'linear-gradient(to right, #2DD4BF, #34d399)',
+        'background-image': 'linear-gradient(135deg, #F59E0B 0%, #F97316 50%, #EF4444 100%)',
         '-webkit-background-clip': 'text',
         'background-clip': 'text',
         'color': 'transparent',
