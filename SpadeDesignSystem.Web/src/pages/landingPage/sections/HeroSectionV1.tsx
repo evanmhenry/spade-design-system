@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/Button'
 import { ArrowRight } from 'lucide-react'
-import { PrimaryCta, handlePrimaryCtaClick, HeroDescription } from '../Content'
+import { PrimaryCta, handlePrimaryCtaClick, HeroDescription, HeroTitle } from '../Content'
 
 const HeroSectionV1 = () => {
 	return (
@@ -9,7 +9,7 @@ const HeroSectionV1 = () => {
 				<div className='w-full sm:w-80 md:w-7/12 flex flex-col gap-8'>
 					<div className='flex flex-col items-center gap-4'>
 						<div className='text-center text-4xl font-bold md:text-6xl lg:leading-[1.1]'>
-							Tip distribution <span className='text-brand-gradient'>made easy</span>
+							<HeroTitle />
 						</div>
 						<div className='text-center text-lg font-light text-primary/60 max-w-96'>{HeroDescription}</div>
 					</div>

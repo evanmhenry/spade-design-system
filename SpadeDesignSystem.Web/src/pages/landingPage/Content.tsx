@@ -1,46 +1,60 @@
-const EMAIL = 'support@spadehq.com'
-const SUBJECT = 'PayGrids Sales Inquiry'
+import { HashLink } from 'react-router-hash-link'
+import { Link } from 'react-router-dom'
+import { GitHubIcon, InstagramIcon, TwitterIcon } from '@/components/icons/SocialIcon'
 
-export const PrimaryCta = 'Contact Sales'
-export const SecondaryCta = 'View Demo'
+const EMAIL = 'info@placeholder.com'
+const SUBJECT = 'General Inquiry'
 
-// eslint-disable-next-line react-refresh/only-export-components
+export const PrimaryCta = 'Contact Us'
+export const SecondaryCta = 'Learn More'
+
 export const handlePrimaryCtaClick = () => {
-	window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(SUBJECT)}`
+	// window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(SUBJECT)}`
+	
 }
 
-// eslint-disable-next-line react-refresh/only-export-components
 export const handleSecondaryCtaClick = () => {
-	console.log('View demo')
+	console.log('Learn more')
 }
 
-export const HeroTitle = 'Tip distribution made easy'
-export const HeroDescription = 'PayGrids is a tip distribution platform that makes it easy to import, configure, and export your tip data.'
+export const NavMenuOptions = [
+	{ name: 'Getting Started', path: '/getting-started', type: Link },
+	{ name: 'Features', path: '/#features', type: HashLink },
+	{ name: 'Pricing', path: '/#pricing', type: HashLink },
+]
 
-export const FeaturesDescription = 'PayGrids makes it easy to import, configure, and export your tip data.'
+export const HeroTitle = () => (
+	<div>
+		This is a <span className='text-brand-gradient'>hero title</span>
+	</div>
+)
+
+export const HeroDescription = 'We provide a comprehensive platform to manage and streamline your operations.'
+
+export const FeaturesDescription = 'Our platform offers a variety of features to help you manage and streamline your data.'
 export const FeatureList = [
 	{
-		name: 'POS Import',
-		title: 'Import you time and tip data with ease',
-		description: 'Connect directly to your POS System or use file uploads to import your time and tip data with ease. No more manual entry of data in spreadsheets.',
+		name: 'Data Import',
+		title: 'Easily Import Data',
+		description: 'Connect to your system or upload files to import data effortlessly. Avoid manual data entry in spreadsheets.',
 		// image: Placeholder,
 	},
 	{
-		name: 'Tip Pool Configuration',
-		title: 'Configure custom distributions',
-		description: 'Configure contributions and distributions to custom tip pools based on time sheet job codes. No more manual calculations.',
+		name: 'Custom Setup',
+		title: 'Configure Custom Settings',
+		description: 'Customize configurations and distributions based on your needs. No more manual calculations.',
 		// image: Placeholder,
 	},
 	{
-		name: 'Audit History',
-		title: 'Keep detailed history of your tip distributions',
-		description: 'See the in depth calculations behind each shift processed. Keep a detailed history of all tip distributions for your records.',
+		name: 'History Tracking',
+		title: 'Maintain Detailed Records',
+		description: 'Keep detailed records of all your operations. Easily review past data.',
 		// image: Placeholder,
 	},
 	{
-		name: 'Payroll Export',
-		title: 'Export directly to your payroll software',
-		description: 'Export via file or direct connection to your payroll software. No more manual entry of tip data into your payroll software each week.',
+		name: 'Export Options',
+		title: 'Seamless Export',
+		description: 'Export data directly to your preferred software. Simplify your workflow.',
 		// image: Placeholder,
 	},
 ]
@@ -48,60 +62,72 @@ export const FeatureList = [
 export const PricingOptions = [
 	{
 		name: 'Free Trial',
-		price: '$0',
-		description: 'Get started with a setup and product demo',
-		bullets: ['30-day free trial', 'Platform setup', 'Payroll system integration', 'POS system integration'],
+		price: 'Free',
+		description: 'Start with a free trial to explore our platform.',
+		bullets: ['30-day free trial', 'Platform setup', 'System integration', 'Customer support'],
 		cta: PrimaryCta,
 		primary: false,
 		action: handlePrimaryCtaClick,
 	},
 	{
 		name: 'Premium',
-		price: undefined,
-		description: 'Perfect for businesses with one or more venues',
-		bullets: ['Effortlessly process shifts', 'Manage multiple tip pools', 'Seamlessly export to payroll software', 'Custom integration options', 'Dedicated support'],
+		price: 'Contact Us',
+		description: 'Ideal for businesses with multiple locations.',
+		bullets: ['Advanced features', 'Multiple configurations', 'Priority support', 'Custom integrations'],
 		cta: PrimaryCta,
 		primary: true,
 		action: handlePrimaryCtaClick,
 	},
 ]
 
-export const FaqDescription = 'Everything you need to know about PayGrids and billing'
+export const FaqDescription = 'Frequently Asked Questions'
 export const FaqList = [
 	{
-		question: 'How does PayGrids work?',
-		answer:
-			'PayGrids takes in data either manually or automated form your POS system and allows you to configure tip distributions before sending the data to your payroll software.',
+		question: 'How does your platform work?',
+		answer: 'Our platform allows you to import data, configure settings, and export to your preferred software seamlessly.',
 	},
 	{
-		question: 'What platforms are supported?',
-		answer: 'Currently, PayGrids supports integrations with Toast and Paycor. If you use a different platform, please reach out to us and we will work with you to integrate.',
+		question: 'Which systems are supported?',
+		answer: 'We support integrations with various systems. Contact us to discuss specific integrations.',
 	},
 	{
-		question: 'How do I get started?',
-		answer: 'Reach out to us to get started. We will help you configure your account and get you up and running.',
+		question: 'How can I start?',
+		answer: 'Contact us to set up your account and begin using our platform.',
 	},
 	{
-		question: 'How much does PayGrids cost?',
-		answer: 'PayGrids has a base cost of $100 per venue per month, with additional costs based on quantity of records processed. See the pricing section for more information.',
+		question: 'What are the costs?',
+		answer: 'Pricing varies based on usage and features. Refer to the pricing section or contact us for more details.',
 	},
 ]
 
-export const GetStartedTitle = 'Tip distributions simplified'
+export const GetStartedTitle = 'Simplify Your Operations'
+
+export const FooterSlogan = 'Simplify your operations with our platform.'
 
 export const FooterSections = [
 	{
 		title: 'Product',
+		items: [{ label: 'Support', link: `mailto:${EMAIL}` }],
+	},
+	{
+		title: 'Company',
 		items: [
-			// { label: 'Change Log', link: '/change-log' },
-			{ label: 'Support', link: `mailto:${EMAIL}` },
+			{ label: 'About Us', link: '/about' },
+			{ label: 'Contact', link: '/contact' },
 		],
 	},
-	// {
-	// 	title: 'Resources',
-	// 	items: [
-	// 		{ label: 'Terms of Use', link: '/terms-of-use' },
-	// 		{ label: 'Privacy Policy', link: '/privacy-policy' },
-	// 	],
-	// },
 ]
+
+export const SocialMediaLinks = [
+	// { name: 'Discord', link: 'https://www.discord.com', icon: <DiscordIcon /> },
+	{ name: 'Twitter', link: 'https://www.twitter.com', icon: <TwitterIcon /> },
+	// { name: 'Facebook', link: 'https://www.facebook.com', icon: <FacebookIcon /> },
+	{ name: 'Instagram', link: 'https://www.instagram.com', icon: <InstagramIcon /> },
+	{ name: 'GitHub', link: 'https://www.github.com', icon: <GitHubIcon /> },
+	// { name: 'YouTube', link: 'https://www.youtube.com', icon: <YouTubeIcon /> },
+	// { name: 'Threads', link: 'https://www.threads.com', icon: <ThreadsIcon /> },
+	// { name: 'LinkedIn', link: 'https://www.linkedin.com', icon: <LinkedInIcon /> },
+	// { name: 'Dribbble', link: 'https://www.dribbble.com', icon: <DribbbleIcon /> },
+	// { name: 'TikTok', link: 'https://www.tiktok.com', icon: <TikTokIcon /> },
+]
+
