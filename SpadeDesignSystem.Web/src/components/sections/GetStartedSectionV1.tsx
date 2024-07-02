@@ -1,8 +1,8 @@
 import { Button } from '@/components/ui/Button'
 import { ArrowRight } from 'lucide-react'
-import { PrimaryCta, GetStartedTitle, handlePrimaryCtaClick } from '../Content'
+import { PrimaryCta, GetStartedTitle, handlePrimaryCtaClick } from '@/pages/landingPage/Content'
 
-const GetStartedSectionV3 = () => {
+const GetStartedSectionV1 = () => {
 	return (
 		<section className='w-screen bg-background py-24 md:py-32 lg:py-40 bg-brand-gradient'>
 			<div className='flex flex-col gap-8 sm:text-center items-center'>
@@ -17,4 +17,4 @@ const GetStartedSectionV3 = () => {
 	)
 }
 
-export default GetStartedSectionV3
+export default GetStartedSectionV1

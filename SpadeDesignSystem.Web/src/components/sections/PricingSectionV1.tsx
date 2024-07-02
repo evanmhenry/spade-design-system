@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Button } from '@/components/ui/Button'
 import { CheckCircle2 } from 'lucide-react'
-import { PricingOptions } from '../Content'
+import { PricingOptions } from '@/pages/landingPage/Content'
 
 const PricingSectionV1 = () => {
 	return (

@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/Button'
+import { PrimaryCta, handlePrimaryCtaClick, HeroDescription, HeroTitle } from '@/pages/landingPage/Content'
 import { ArrowRight } from 'lucide-react'
-import { PrimaryCta, handlePrimaryCtaClick, HeroDescription, HeroTitle } from '../Content'
 
 const HeroSectionV1 = () => {
 	return (

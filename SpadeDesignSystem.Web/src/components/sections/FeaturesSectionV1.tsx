@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { FeatureList, FeaturesDescription } from '../Content'
+import { FeatureList, FeaturesDescription } from '@/pages/landingPage/Content'
 
-const FeaturesSectionV2 = () => {
+const FeaturesSectionV1 = () => {
 	return (
 		<section id='features' className='w-screen border-b bg-muted/40'>
 			<div className='container max-w-5xl py-16 md:py-20 lg:py-24'>
@@ -26,4 +26,5 @@ const FeaturesSectionV2 = () => {
 	)
 }
 
-export default FeaturesSectionV2
+export default FeaturesSectionV1
+

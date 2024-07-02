@@ -1,5 +1,5 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/Accordion'
-import { FaqDescription, FaqList } from '../Content'
+import { FaqDescription, FaqList } from '@/pages/landingPage/Content'
 
 const FaqSectionV1V1 = () => {
 	return (
@@ -21,3 +21,4 @@ const FaqSectionV1V1 = () => {
 }
 
 export default FaqSectionV1V1
+
