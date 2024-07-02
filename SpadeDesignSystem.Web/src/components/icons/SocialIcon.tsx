@@ -11,7 +11,7 @@ const SocialIcon = ({ className, size, path }: SocialIconProps) => (
 		viewBox='0 0 48 48'
 		fill='none'
 		xmlns='http://www.w3.org/2000/svg'
-		className={`${className} scale-90 transition-transform duration-300 ease-in-out hover:opacity-75 hover:scale-100`}
+		className={`${className} hover:opacity-75 hover:scale-100 hover:cursor-pointer`}
 	>
 		<path d={path} fill='currentColor' />
 	</svg>
