@@ -4,7 +4,7 @@
 
 @layer base {
 	:root {
-		--brand: 160 84% 39%;
+		--brand: 25 95% 53%;
 		--brand-foreground: 0 0% 98%;
 
 		--background: 0 0% 100%;
@@ -52,7 +52,7 @@
 
 	/* TODO: fix dark mode color palette */
 	.dark {
-		--brand: 160 84% 39%;
+		--brand: 25 95% 53%;
 		--brand-foreground: 0 0% 98%;
 
 		--background: 240 10% 3.9%;
@@ -108,9 +108,8 @@
 	}
 }
 
-
 @layer components {
 	.container {
-	  @apply px-4 sm:px-8;
+		@apply px-4 sm:px-8;
 	}
-  }
+}

@@ -105,9 +105,6 @@ export const plugins = [
       '.bg-brand-gradient': {
         'background-image': 'linear-gradient(135deg, #F59E0B 0%, #F97316 50%, #EF4444 100%)',
       },
-      '.bg-brand-gradient-hover': { 
-        'background-image': 'linear-gradient(135deg, #d97706 0%, #ea580c 50%, #dc2626 100%)',
-      },
       '.text-brand-gradient': {
         'background-image': 'linear-gradient(135deg, #F59E0B 0%, #F97316 50%, #EF4444 100%)',
         '-webkit-background-clip': 'text',

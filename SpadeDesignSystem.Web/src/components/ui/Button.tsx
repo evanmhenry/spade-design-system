@@ -11,7 +11,8 @@ const buttonVariants = cva(
 			variant: {
 				default: 'bg-primary text-primary-foreground hover:bg-primary/90',
 				brand: 'bg-brand text-brand-foreground hover:bg-brand/90',
-				brandGradient: 'bg-brand-gradient hover:bg-brand-gradient-hover text-brand-foreground',
+				brandGradient: 'bg-brand-gradient hover:opacity-90   text-brand-foreground',
+				brandGhost: 'hover:text-brand',
 				success: 'bg-success text-success-foreground hover:bg-success/90',
 				warning: 'bg-warning text-warning-foreground hover:bg-warning/90',
 				destructive: 'bg-destructive text-destructive-foreground hover:bg-destructive/90',
