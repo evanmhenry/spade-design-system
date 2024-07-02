@@ -13,10 +13,10 @@ import {
 } from '@tanstack/react-table'
 import { ChevronDown, Plus } from 'lucide-react'
 import { DropdownMenu, DropdownMenuCheckboxItem, DropdownMenuContent, DropdownMenuTrigger } from '@/components/ui/DropdownMenu'
-import { Input } from '@/components/ui/input'
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
-import { Button } from '@/components/ui/button'
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '../Table'
 import { useState } from 'react'
+import { Button } from '../Button'
+import { Input } from '../Input'
 
 type DataTableProps = {
 	title?: string
@@ -159,3 +159,4 @@ const DataTable = ({ title, data, columns, searchFilter = [], addLabel, onAdd, o
 }
 
 export default DataTable
+
