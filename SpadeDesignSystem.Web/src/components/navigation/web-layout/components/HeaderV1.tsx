@@ -1,5 +1,5 @@
 import HamburgerMenu from './HamburgerMenu'
-import Logo from '@/assets/brand/spade-design-system-box.svg'
+import Logo from '@/assets/spade-design-system-box.svg'
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, navigationMenuTriggerStyle } from '../../../ui/NavigationMenu'
 import { Button } from '@/components/ui/Button'
 import { HashLink } from 'react-router-hash-link'

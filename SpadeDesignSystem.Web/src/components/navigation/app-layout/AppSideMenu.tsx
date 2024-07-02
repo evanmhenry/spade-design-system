@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import { BarChartBigIcon, Settings, Square, SquareCheck, Table, TextCursorInput } from 'lucide-react'
-import Logo from '@/assets/brand/spade-design-system-box.svg'
+import Logo from '@/assets/spade-design-system-box.svg'
 import { useTheme } from '../../theming/ThemeProviderV1'
 
 const AppSideMenu = () => {
