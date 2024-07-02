@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { HashLink } from 'react-router-hash-link'
 import { Link } from 'react-router-dom'
 import { GitHubIcon, InstagramIcon, TwitterIcon } from '@/components/icons/SocialIcon'
@@ -10,7 +11,6 @@ export const SecondaryCta = 'Learn More'
 
 export const handlePrimaryCtaClick = () => {
 	// window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(SUBJECT)}`
-	
 }
 
 export const handleSecondaryCtaClick = () => {
@@ -18,9 +18,9 @@ export const handleSecondaryCtaClick = () => {
 }
 
 export const NavMenuOptions = [
-	{ name: 'Getting Started', path: '/getting-started', type: Link },
-	{ name: 'Features', path: '/#features', type: HashLink },
-	{ name: 'Pricing', path: '/#pricing', type: HashLink },
+	{ name: 'Docs', path: '/docs', type: Link },
+	{ name: 'Blog', path: '/blog', type: Link },
+	{ name: 'Showcase', path: '/showcase', type: Link },
 ]
 
 export const HeroTitle = () => (

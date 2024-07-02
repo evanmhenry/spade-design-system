@@ -1,5 +1,5 @@
 import Logo from '@/assets/brand/spade-design-system-box.svg'
-import SpadeSoftwareLink from '@/pages/landingPage/components/SpadeSoftwareLink'
+import SpadeSoftwareLink from '@/components/ui/SpadeSoftwareLink'
 import { FooterSections, FooterSlogan, SocialMediaLinks } from '@/pages/landingPage/Content'
 import { useNavigate } from 'react-router-dom'
 
