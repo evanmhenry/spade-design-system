@@ -4,15 +4,13 @@ import HeaderV2 from './components/HeaderV2'
 
 const WebLayout = () => {
 	return (
-		<div className='flex flex-col min-h-screen'>
+		<>
+			<HeaderV2 />
 			<div className='flex flex-col flex-1 items-center w-screen overflow-auto bg-background'>
-				<HeaderV2 />
-				<div className='mt-16'>
-					<Outlet />
-				</div>
+				<Outlet />
 			</div>
 			<Footer />
-		</div>
+		</>
 	)
 }
 
