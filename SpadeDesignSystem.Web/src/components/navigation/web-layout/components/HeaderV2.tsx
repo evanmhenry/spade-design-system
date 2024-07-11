@@ -1,16 +1,16 @@
-import HamburgerMenu from './HamburgerMenu'
-import Logo from '@/assets/spade-design-system-box.svg'
-import { Button } from '@/components/ui/Button'
-import { HashLink } from 'react-router-hash-link'
-import { NavMenuOptions } from '@/pages/landingPage/Content'
 import { useEffect, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
-import ThemeToggleV2 from '@/components/theming/ThemeToggleV2'
-import { GitHubIcon } from '@/components/icons/SocialIcon'
+import { Button } from '@/components/ui/Button'
 import { Separator } from '@/components/ui/Separator'
-import ThemeToggleV3 from '@/components/theming/ThemeToggleV3'
+import { GitHubIcon } from '@/components/icons/SocialIcon'
 import { Search } from 'lucide-react'
+import { HashLink } from 'react-router-hash-link'
+import { NavMenuOptions } from '@/pages/landingPage/Content'
+import HamburgerMenu from './HamburgerMenu'
 import SearchDialog from './SearchDialog'
+import ThemeToggleV2 from '@/components/theming/ThemeToggleV2'
+import ThemeToggleV3 from '@/components/theming/ThemeToggleV3'
+import Logo from '@/assets/spade-design-system-box.svg'
 
 const HeaderV2 = () => {
 	const navigate = useNavigate()
@@ -18,43 +18,39 @@ const HeaderV2 = () => {
 	const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(false)
 	const [searchOpen, setSearchOpen] = useState(false)
 
-	const handleSearch = () => {
-		setSearchOpen((searchOpen) => !searchOpen)
-	}
+	const handleSearch = () => setSearchOpen(!searchOpen)
 
 	useEffect(() => {
-		const down = (e: KeyboardEvent) => {
+		const handleKeyDown = (e: KeyboardEvent) => {
 			if (e.key === 'k' && (e.metaKey || e.ctrlKey)) {
 				e.preventDefault()
-				setSearchOpen((searchOpen) => !searchOpen)
+				handleSearch()
 			}
 		}
 
-		document.addEventListener('keydown', down)
-		return () => document.removeEventListener('keydown', down)
+		document.addEventListener('keydown', handleKeyDown)
+		return () => document.removeEventListener('keydown', handleKeyDown)
 	}, [])
 
-	const isDocsLayout = () => {
-		return location.pathname.startsWith('/docs')
-	}
+	const isDocsLayout = location.pathname.startsWith('/docs')
 
 	return (
 		<>
 			<header className={`z-20 sticky top-0 w-full border-b transition-all duration-300 bg-background ${hamburgerMenuOpen ? 'h-screen' : 'h-16'}`}>
 				<div className='container max-w-screen-2xl'>
 					<div className='flex justify-between w-full items-center h-16'>
-						<div className='flex items-center justify-between gap-1 w-full '>
+						<div className='flex items-center justify-between gap-1 w-full'>
 							<div className='flex items-center gap-4 w-full justify-between'>
 								<a href='/'>
 									<div className='flex items-center gap-2 text-2xl font-semibold'>
-										<img alt='Logo' className='h-8 flex-none hover:cursor-pointer' src={Logo} onClick={() => navigate('/')} />{' '}
-										<span className={`${isDocsLayout() ? 'hidden' : ''} md:flex`}>Spade UI</span>
+										<img alt='Logo' className='h-8 flex-none hover:cursor-pointer' src={Logo} onClick={() => navigate('/')} />
+										<span className={`${isDocsLayout ? 'hidden' : ''} md:flex`}>Spade UI</span>
 									</div>
 								</a>
 								<Button
 									variant='outline'
 									size='sm'
-									className={`${isDocsLayout() ? '' : 'hidden'} md:flex text-muted-foreground gap-2 text-left w-56 justify-between`}
+									className={`${isDocsLayout ? '' : 'hidden'} md:flex text-muted-foreground gap-2 text-left w-56 justify-between`}
 									onClick={handleSearch}
 								>
 									<div className='flex items-center gap-2'>
