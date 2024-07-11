@@ -3,8 +3,16 @@ import DocsSideMenu from './components/DocsSideMenu'
 import HeaderV2 from '../web-layout/components/HeaderV2'
 import Footer from '../web-layout/components/Footer'
 import DocsMobileMenu from './components/DocsMobileMenu'
+import TableOfContents from './components/TableOfContents'
 
 const DocsLayout = () => {
+	const contents = [
+		{ id: 'installation', title: 'Installation', level: 0 },
+		{ id: 'basic-usage', title: 'Basic usage', level: 0 },
+		{ id: 'configuration', title: 'Configuration', level: 0 },
+		{ id: 'next-steps', title: 'Next Steps', level: 0 },
+	]
+
 	return (
 		<>
 			<HeaderV2 />
@@ -14,7 +22,7 @@ const DocsLayout = () => {
 				<div className='flex-1 py-10'>
 					<Outlet />
 				</div>
-				<div className='hidden xl:block overflow-y-auto flex-shrink-0 max-w-xs h-screen sticky top-16 w-64 scrollbar-thin bg-red-300 py-10'>Table of Contents</div>
+				<TableOfContents contents={contents} />
 			</div>
 			<Footer />
 		</>
