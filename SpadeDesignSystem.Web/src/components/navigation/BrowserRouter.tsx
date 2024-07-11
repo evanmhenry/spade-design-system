@@ -11,6 +11,7 @@ import LandingPage from '@/pages/landingPage/LandingPage'
 import GettingStartedPage from '@/pages/docs/GettingStartedPage'
 import WebLayout from './web-layout/WebLayout'
 import DocsLayout from './docs-layout/DocsLayout'
+import GuidesPage from '@/pages/docs/GuidesPage'
 
 const BrowserRouter = createBrowserRouter([
 	{
@@ -25,12 +26,16 @@ const BrowserRouter = createBrowserRouter([
 		errorElement: <ErrorPage />,
 	},
 	{
-		path: '/',
+		path: '/docs',
 		element: <DocsLayout />,
 		children: [
 			{
-				path: 'docs',
+				path: '',
 				element: <GettingStartedPage />,
+			},
+			{
+				path: 'guides',
+				element: <GuidesPage />,
 			},
 		],
 	},
