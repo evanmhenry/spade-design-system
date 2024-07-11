@@ -21,18 +21,18 @@ const BrowserRouter = createBrowserRouter([
 				path: '',
 				element: <LandingPage />,
 			},
-			{
-				path: 'docs',
-				element: <DocsLayout />,
-				children: [
-					{
-						path: '',
-						element: <GettingStartedPage />,
-					},
-				],
-			}
 		],
 		errorElement: <ErrorPage />,
+	},
+	{
+		path: '/',
+		element: <DocsLayout />,
+		children: [
+			{
+				path: 'docs',
+				element: <GettingStartedPage />,
+			},
+		],
 	},
 	{
 		path: '/',
