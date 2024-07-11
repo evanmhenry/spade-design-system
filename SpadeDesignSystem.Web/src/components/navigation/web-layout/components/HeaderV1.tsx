@@ -20,14 +20,15 @@ const HeaderV1 = () => {
 	// }
 
 	return (
-		<header className={`z-50 fixed top-0 w-full border-b transition-all duration-300 bg-background ${isOpen ? 'h-screen' : 'h-16'}`}>
+		<header className={`z-10 sticky top-0 w-full border-b transition-all duration-300 bg-background ${isOpen ? 'h-screen' : 'h-16'}`}>
 			<div className='container max-w-screen-2xl'>
 				<div className='flex justify-between w-full items-center h-16'>
 					<a href='/'>
-						<div className='flex items-center gap-2 text-2xl font-semibold'>
+						<div className='flex items-center gap-3 text-2xl font-semibold'>
 							<img alt='Logo' className='h-8 flex-none hover:cursor-pointer' src={Logo} onClick={() => navigate('/')} /> Spade UI
 						</div>
 					</a>
+
 					<HamburgerMenu isOpen={isOpen} setIsOpen={setIsOpen} className='md:hidden' />
 					<div className='hidden md:flex gap-4'>
 						<NavigationMenu>

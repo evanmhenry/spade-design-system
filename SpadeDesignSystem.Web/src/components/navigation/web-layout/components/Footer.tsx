@@ -1,6 +1,10 @@
 import Logo from '@/assets/spade-design-system-box.svg'
 import SpadeSoftwareLink from '@/components/ui/SpadeSoftwareLink'
-import { FooterSections, FooterSlogan, SocialMediaLinks } from '@/pages/landingPage/Content'
+import {
+	FooterSections,
+	// FooterSlogan,
+	SocialMediaLinks,
+} from '@/pages/landingPage/Content'
 import { useNavigate } from 'react-router-dom'
 
 type LinkItem = {
@@ -34,7 +38,8 @@ const Footer = () => {
 					<div className='flex items-center gap-2 text-2xl font-semibold'>
 						<img alt='Logo' className='h-8 flex-none hover:cursor-pointer' src={Logo} onClick={() => navigate('/')} /> Spade UI
 					</div>
-					<div className='text-sm text-muted-foreground'>{FooterSlogan}</div>
+					{/* <div className='text-sm text-muted-foreground'>{FooterSlogan}</div> */}
+					<div className='flex gap-1 ml-[-10px]'>{SocialMediaLinks.map((socialMediaLink) => socialMediaLink.icon)}</div>
 				</div>
 				{FooterSections.map((footerLink) => (
 					<FooterLinks key={footerLink.title} {...footerLink} />
@@ -42,13 +47,6 @@ const Footer = () => {
 			</div>
 			<div className='container max-w-screen-2xl text-center text-primary/30 mb-6 flex items-center justify-between'>
 				<SpadeSoftwareLink />
-				<div className='flex gap-3'>
-					{SocialMediaLinks.map((socialMediaLink) => (
-						<a key={socialMediaLink.name} href={socialMediaLink.link} className='h-6 w-6'>
-							{socialMediaLink.icon}
-						</a>
-					))}
-				</div>
 			</div>
 		</footer>
 	)

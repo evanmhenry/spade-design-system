@@ -15,7 +15,7 @@ const HeaderV2 = () => {
 	const navigate = useNavigate()
 
 	return (
-		<header className={`z-50 fixed top-0 w-full border-b transition-all duration-300 bg-background ${isOpen ? 'h-screen' : 'h-16'}`}>
+		<header className={`z-20 sticky top-0 w-full border-b transition-all duration-300 bg-background ${isOpen ? 'h-screen' : 'h-16'}`}>
 			<div className='container max-w-screen-2xl'>
 				<div className='flex justify-between w-full items-center h-16'>
 					<a href='/'>
@@ -31,7 +31,7 @@ const HeaderV2 = () => {
 							</Button>
 						))}
 						<Separator orientation='vertical' className='h-6 ml-2' />
-						<div className='flex gap-4 pl-2 items-center text-muted-foreground'>
+						<div className='flex gap-2 pl-2 items-center text-muted-foreground'>
 							<ThemeToggleV2 />
 							<GitHubIcon />
 						</div>
