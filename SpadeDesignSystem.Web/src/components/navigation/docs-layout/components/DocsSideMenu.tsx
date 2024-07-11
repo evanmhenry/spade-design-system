@@ -1,5 +1,5 @@
 import { LayoutGridIcon, Play } from 'lucide-react'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 export const NavSections = [
 	{
@@ -57,6 +57,7 @@ export const NavSections = [
 
 const DocsSideMenu = () => {
 	const location = useLocation()
+	const navigate = useNavigate()
 
 	const MainOptions = [
 		{
@@ -66,12 +67,12 @@ const DocsSideMenu = () => {
 		},
 		{
 			label: 'Guides',
-			path: '/guides',
+			path: '/docs/guides',
 			icon: <LayoutGridIcon size={20} />,
 		},
 		{
 			label: 'Resources',
-			path: '/resources',
+			path: '/docs/resources',
 			icon: <LayoutGridIcon size={20} />,
 		},
 	]
@@ -80,7 +81,7 @@ const DocsSideMenu = () => {
 		if (path === '/') {
 			return location.pathname === path
 		}
-		return location.pathname.startsWith(path)
+		return location.pathname.endsWith(path)
 	}
 
 	return (
@@ -92,6 +93,7 @@ const DocsSideMenu = () => {
 							<a
 								key={option.label}
 								className={`flex gap-2 hover:cursor-pointer items-center font-medium ${isPathSelected(option.path) ? 'text-brand border-l-brand' : 'text-muted-foreground hover:text-primary hover:border-l-muted-foreground'}`}
+								onClick={() => navigate(option.path)}
 							>
 								<div className='rounded-md border p-[6px]'>{option.icon}</div>
 								{option.label}
