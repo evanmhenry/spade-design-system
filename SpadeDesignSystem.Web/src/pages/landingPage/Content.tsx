@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { HashLink } from 'react-router-hash-link'
 import { Link } from 'react-router-dom'
-import { GitHubIcon, InstagramIcon, TwitterIcon } from '@/components/icons/SocialIcon'
+import { DiscordIcon, DribbbleIcon, FacebookIcon, GitHubIcon, InstagramIcon, LinkedInIcon, ThreadsIcon, TikTokIcon, TwitterIcon, YouTubeIcon } from '@/components/icons/SocialIcon'
 
 const EMAIL = 'info@placeholder.com'
 const SUBJECT = 'General Inquiry'
@@ -119,15 +118,15 @@ export const FooterSections = [
 ]
 
 export const SocialMediaLinks = [
-	// { name: 'Discord', link: 'https://www.discord.com', icon: <DiscordIcon /> },
-	{ name: 'Twitter', link: 'https://www.twitter.com', icon: <TwitterIcon /> },
-	// { name: 'Facebook', link: 'https://www.facebook.com', icon: <FacebookIcon /> },
-	{ name: 'Instagram', link: 'https://www.instagram.com', icon: <InstagramIcon /> },
-	{ name: 'GitHub', link: 'https://www.github.com', icon: <GitHubIcon /> },
-	// { name: 'YouTube', link: 'https://www.youtube.com', icon: <YouTubeIcon /> },
-	// { name: 'Threads', link: 'https://www.threads.com', icon: <ThreadsIcon /> },
-	// { name: 'LinkedIn', link: 'https://www.linkedin.com', icon: <LinkedInIcon /> },
-	// { name: 'Dribbble', link: 'https://www.dribbble.com', icon: <DribbbleIcon /> },
-	// { name: 'TikTok', link: 'https://www.tiktok.com', icon: <TikTokIcon /> },
+	{ name: 'GitHub', icon: <GitHubIcon link='https://www.github.com' /> },
+	{ name: 'Twitter', icon: <TwitterIcon link='https://www.twitter.com' /> },
+	{ name: 'Instagram', icon: <InstagramIcon link='https://www.instagram.com' /> },
+	// { name: 'Discord', icon: <DiscordIcon link='https://www.discord.com' /> },
+	// { name: 'Facebook', icon: <FacebookIcon link='https://www.facebook.com' /> },
+	// { name: 'YouTube', icon: <YouTubeIcon link='https://www.youtube.com' /> },
+	// { name: 'Threads', icon: <ThreadsIcon link='https://www.threads.com' /> },
+	// { name: 'LinkedIn', icon: <LinkedInIcon link='https://www.linkedin.com' /> },
+	// { name: 'Dribbble', icon: <DribbbleIcon link='https://www.dribbble.com' /> },
+	// { name: 'TikTok', icon: <TikTokIcon link='https://www.tiktok.com' /> },
 ]
 
