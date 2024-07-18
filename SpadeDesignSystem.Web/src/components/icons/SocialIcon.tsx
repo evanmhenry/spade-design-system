@@ -7,7 +7,7 @@ type SocialIconProps = {
 }
 
 const SocialIcon = ({ size, path, link }: SocialIconProps) => (
-	<a href={link} target='_blank' rel='noopener noreferrer'>
+	<a href={link} target='_blank' rel='noopener noreferrer' aria-label='Social Icon Link'>
 		<Button variant='ghost' size='icon' className=' text-muted-foreground'>
 			<svg width={size || 20} height={size || 20} viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'>
 				<path d={path} fill='currentColor' />
