@@ -1,11 +1,10 @@
 import { Link, useLocation } from 'react-router-dom'
 import { BarChartBigIcon, Settings, Square, SquareCheck, Table, TextCursorInput } from 'lucide-react'
 import Logo from '@/assets/spade-software-icon.svg'
-import { useTheme } from '../../theming/ThemeProviderV1'
+import { SITE_NAME } from '@/pages/landingPage/Content'
 
 const AppSideMenu = () => {
 	const location = useLocation()
-	const { theme } = useTheme()
 
 	const navOptions = [
 		{
@@ -46,7 +45,8 @@ const AppSideMenu = () => {
 		<div className='flex h-screen flex-col w-64 border-r flex-shrink-0'>
 			<div className='p-3 border-b h-14 flex-shrink-0'>
 				<div className='flex items-center gap-2 text-2xl font-semibold'>
-					<img alt='Logo' className='h-8 flex-none hover:cursor-pointer' src={Logo} /> Spade UI
+					<img alt='Logo' className='h-8 flex-none hover:cursor-pointer' src={Logo} />
+					{SITE_NAME}
 				</div>
 			</div>
 			<div className='p-3 h-full'>

@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react'
-import { useLocation, useNavigate } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 import { Button } from '@/components/ui/Button'
 import { Separator } from '@/components/ui/Separator'
 import { GitHubIcon } from '@/components/icons/SocialIcon'
 import { Search } from 'lucide-react'
 import { HashLink } from 'react-router-hash-link'
-import { NavMenuOptions } from '@/pages/landingPage/Content'
+import { NavMenuOptions, SITE_NAME } from '@/pages/landingPage/Content'
 import HamburgerMenu from './HamburgerMenu'
 import SearchDialog from './SearchDialog'
 import ThemeToggleV2 from '@/components/theming/ThemeToggleV2'
@@ -13,7 +13,6 @@ import ThemeToggleV3 from '@/components/theming/ThemeToggleV3'
 import Logo from '@/assets/spade-design-system-box.svg'
 
 const HeaderV2 = () => {
-	const navigate = useNavigate()
 	const location = useLocation()
 	const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(false)
 	const [searchOpen, setSearchOpen] = useState(false)
@@ -43,8 +42,10 @@ const HeaderV2 = () => {
 							<div className='flex items-center gap-4 w-full justify-between'>
 								<a href='/'>
 									<div className='flex items-center gap-2 text-2xl font-semibold'>
-										<img alt='Logo' className='h-8 flex-none hover:cursor-pointer' src={Logo} onClick={() => navigate('/')} />
-										<span className={`${isDocsLayout ? 'hidden' : ''} md:flex`}>Spade UI</span>
+										<a href='/'>
+											<img alt='Logo' className='h-8 flex-none hover:cursor-pointer' src={Logo} />
+										</a>
+										<span className={`${isDocsLayout ? 'hidden' : ''} md:flex`}>{SITE_NAME}</span>
 									</div>
 								</a>
 								<Button

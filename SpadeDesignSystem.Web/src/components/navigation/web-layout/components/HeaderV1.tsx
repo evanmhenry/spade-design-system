@@ -3,15 +3,13 @@ import Logo from '@/assets/spade-design-system-box.svg'
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, navigationMenuTriggerStyle } from '../../../ui/NavigationMenu'
 import { Button } from '@/components/ui/Button'
 import { HashLink } from 'react-router-hash-link'
-import { NavMenuOptions, PrimaryCta, handlePrimaryCtaClick } from '@/pages/landingPage/Content'
+import { NavMenuOptions, PrimaryCta, SITE_NAME, handlePrimaryCtaClick } from '@/pages/landingPage/Content'
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 // import { useMsal } from '@azure/msal-react'
 // import { loginRequest } from '../../../../security/AuthConfig'
 
 const HeaderV1 = () => {
 	const [isOpen, setIsOpen] = useState(false)
-	const navigate = useNavigate()
 
 	// const { instance } = useMsal()
 
@@ -25,7 +23,9 @@ const HeaderV1 = () => {
 				<div className='flex justify-between w-full items-center h-16'>
 					<a href='/'>
 						<div className='flex items-center gap-3 text-2xl font-semibold'>
-							<img alt='Logo' className='h-8 flex-none hover:cursor-pointer' src={Logo} onClick={() => navigate('/')} /> Spade UI
+							<a href='/'>
+								<img alt='Logo' className='h-8 flex-none hover:cursor-pointer' src={Logo} /> {SITE_NAME}
+							</a>
 						</div>
 					</a>
 
