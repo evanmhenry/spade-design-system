@@ -11,9 +11,9 @@ const PricingSectionV1 = () => {
 					<div className='text-3xl font-semibold'>Pricing</div>
 					<div className='text-muted-foreground'>Simple, transparent pricing that grows with your business</div>
 				</div>
-				<div className='flex flex-col sm:flex-row text-left w-full gap-5'>
+				<div className='flex flex-col sm:flex-row text-left w-full gap-5 justify-center'>
 					{PricingOptions.map((option) => (
-						<div className='flex flex-col gap-6 w-full border rounded-2xl p-6'>
+						<div className='flex flex-col gap-6 w-full max-w-96 border rounded-2xl p-6 bg-background'>
 							<div className='flex flex-col gap-4'>
 								<div className='text-md font-semibold text-brand-gradient'>{option.name}</div>
 								<div className='text-4xl font-semibold'>
@@ -48,3 +48,4 @@ const PricingSectionV1 = () => {
 }
 
 export default PricingSectionV1
+
