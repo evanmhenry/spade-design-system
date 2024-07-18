@@ -42,12 +42,10 @@ const Footer = () => {
 					<div className='flex gap-1 ml-[-10px]'>{SocialMediaLinks.map((socialMediaLink) => socialMediaLink.icon)}</div>
 				</div>
 				{FooterSections.map((footerLink) => (
-					<FooterLinks key={footerLink.title} {...footerLink} />
+					<FooterLinks key={footerLink.title} title={footerLink.title} items={footerLink.items} />
 				))}
 			</div>
-			<div className='container max-w-screen-2xl text-center text-primary/30 mb-6 flex items-center justify-between'>
-				<SpadeSoftwareLink />
-			</div>
+			<SpadeSoftwareLink />
 		</footer>
 	)
 }
