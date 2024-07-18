@@ -4,7 +4,6 @@ import { Button } from '@/components/ui/Button'
 import { Separator } from '@/components/ui/Separator'
 import { GitHubIcon } from '@/components/icons/SocialIcon'
 import { Search } from 'lucide-react'
-import { HashLink } from 'react-router-hash-link'
 import { NavMenuOptions, SITE_NAME } from '@/pages/landingPage/Content'
 import HamburgerMenu from './HamburgerMenu'
 import SearchDialog from './SearchDialog'
@@ -103,7 +102,9 @@ const HeaderV2 = () => {
 							<div className='flex flex-col gap-6'>
 								{NavMenuOptions.map((option) => (
 									<div key={option.name} className='text-3xl font-medium'>
-										<HashLink to={option.path}>{option.name}</HashLink>
+										<option.type to={option.path} onClick={() => setHamburgerMenuOpen(false)}>
+											{option.name}
+										</option.type>
 									</div>
 								))}
 							</div>
