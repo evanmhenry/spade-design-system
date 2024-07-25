@@ -1,38 +1,11 @@
 import { Link, useLocation } from 'react-router-dom'
-import { BarChartBigIcon, Settings, Square, SquareCheck, Table, TextCursorInput } from 'lucide-react'
+import { Settings } from 'lucide-react'
 import Logo from '@/assets/spade-software-icon.svg'
 import { SITE_NAME } from '@/pages/landingPage/Content'
+import { NAV_OPTIONS } from './AppContent'
 
 const AppSideMenu = () => {
 	const location = useLocation()
-
-	const navOptions = [
-		{
-			label: 'Buttons',
-			path: '/buttons',
-			icon: <SquareCheck className='h-5 w-5' />,
-		},
-		{
-			label: 'Charts',
-			path: '/charts',
-			icon: <BarChartBigIcon className='h-5 w-5' />,
-		},
-		{
-			label: 'Data Table',
-			path: '/data-table',
-			icon: <Table className='h-5 w-5' />,
-		},
-		{
-			label: 'Cards',
-			path: '/cards',
-			icon: <Square className='h-5 w-5' />,
-		},
-		{
-			label: 'Inputs',
-			path: '/inputs',
-			icon: <TextCursorInput className='h-5 w-5' />,
-		},
-	]
 
 	const isPathSelected = (path: string) => {
 		if (path === '/') {
@@ -50,7 +23,7 @@ const AppSideMenu = () => {
 				</div>
 			</div>
 			<div className='p-3 h-full'>
-				{navOptions.map((option) => (
+				{NAV_OPTIONS.map((option) => (
 					<Link
 						key={option.label}
 						to={option.path}
