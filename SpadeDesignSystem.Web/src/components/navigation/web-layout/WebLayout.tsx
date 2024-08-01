@@ -1,11 +1,11 @@
 import { Outlet } from 'react-router-dom'
 import Footer from './components/Footer'
-import HeaderV2 from './components/HeaderV2'
+import Header from './components/Header'
 
 const WebLayout = () => {
 	return (
 		<>
-			<HeaderV2 />
+			<Header />
 			<div className='flex flex-col flex-1 items-center w-screen overflow-auto bg-background'>
 				<Outlet />
 			</div>

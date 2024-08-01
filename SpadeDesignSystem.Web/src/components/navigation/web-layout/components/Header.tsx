@@ -7,11 +7,10 @@ import { Search } from 'lucide-react'
 import { NavMenuOptions, SITE_NAME } from '@/pages/landingPage/Content'
 import HamburgerMenu from './HamburgerMenu'
 import SearchDialog from './SearchDialog'
-import ThemeToggleV2 from '@/components/theming/ThemeToggleV2'
-import ThemeToggleV3 from '@/components/theming/ThemeToggleV3'
+import ThemeToggle from '@/components/theming/ThemeToggle'
 import Logo from '@/assets/spade-design-system-box.svg'
 
-const HeaderV2 = () => {
+const Header = () => {
 	const location = useLocation()
 	const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(false)
 	const [searchOpen, setSearchOpen] = useState(false)
@@ -71,7 +70,7 @@ const HeaderV2 = () => {
 								))}
 								<Separator orientation='vertical' className='h-6 ml-2' />
 								<div className='flex gap-1 pl-2 items-center text-muted-foreground'>
-									<ThemeToggleV2 />
+									<ThemeToggle />
 									<GitHubIcon />
 								</div>
 							</div>
@@ -97,7 +96,7 @@ const HeaderV2 = () => {
 							>
 								Sign in
 							</Button> */}
-								<ThemeToggleV3 />
+								<ThemeToggle />
 							</div>
 							<div className='flex flex-col gap-6'>
 								{NavMenuOptions.map((option) => (
@@ -117,5 +116,5 @@ const HeaderV2 = () => {
 	)
 }
 
-export default HeaderV2
+export default Header
 

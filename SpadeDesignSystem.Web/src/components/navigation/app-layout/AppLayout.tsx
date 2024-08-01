@@ -3,7 +3,7 @@ import { LogOut, User } from 'lucide-react'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '../../ui/DropdownMenu'
 import { Avatar, AvatarFallback } from '../../ui/Avatar'
 import AppSideMenu from './AppSideMenu'
-import ThemeToggleV1 from '../../theming/ThemeToggleV1'
+import ThemeToggleV1 from '../../theming/ThemeToggle'
 
 const AppLayout = () => {
 	return (

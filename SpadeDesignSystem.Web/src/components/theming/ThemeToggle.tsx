@@ -1,12 +1,12 @@
 import { Moon, Sun } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/DropdownMenu'
-import { useTheme } from '@/components/theming/ThemeProviderV1'
+import { useTheme } from '@/components/theming/ThemeProvider'
 
 // TODO: add variants: 'select' | 'toggle'
 // select: dropdown menu with options
 // toggle: button that toggles between options
-const ThemeToggleV1 = () => {
+const ThemeToggle = () => {
 	const { setTheme } = useTheme()
 
 	return (
@@ -27,4 +27,4 @@ const ThemeToggleV1 = () => {
 	)
 }
 
-export default ThemeToggleV1
+export default ThemeToggle

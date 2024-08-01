@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom'
 import DocsSideMenu from './components/DocsSideMenu'
-import HeaderV2 from '../web-layout/components/HeaderV2'
+import HeaderV2 from '../web-layout/components/Header'
 import Footer from '../web-layout/components/Footer'
 import DocsMobileMenu from './components/DocsMobileMenu'
 import TableOfContents from './components/TableOfContents'
