@@ -13,7 +13,7 @@ import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, Command
  * Variants for the multi-select component to handle different styles.
  * Uses class-variance-authority (cva) to define different styles based on "variant" prop.
  */
-const multiSelectVariants = cva('m-1 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300', {
+const multiSelectVariants = cva('m-1 transition ease-in-out hover:bg-red-500', {
 	variants: {
 		variant: {
 			default: 'border-foreground/10 text-foreground bg-card hover:bg-card/80',
@@ -92,22 +92,7 @@ interface MultiSelectProps extends React.ButtonHTMLAttributes<HTMLButtonElement>
 }
 
 export const MultiSelect = React.forwardRef<HTMLButtonElement, MultiSelectProps>(
-	(
-		{
-			options,
-			onValueChange,
-			variant,
-			defaultValue = [],
-			placeholder = 'Select options',
-			animation = 0,
-			maxCount = 3,
-			modalPopover = false,
-			// asChild = false,
-			className,
-			...props
-		},
-		ref,
-	) => {
+	({ options, onValueChange, variant, defaultValue = [], placeholder = 'Select options', animation = 0, maxCount = 3, modalPopover = false, className, ...props }, ref) => {
 		const [selectedValues, setSelectedValues] = React.useState<string[]>(defaultValue)
 		const [isPopoverOpen, setIsPopoverOpen] = React.useState(false)
 		const [isAnimating, setIsAnimating] = React.useState(false)
@@ -167,7 +152,7 @@ export const MultiSelect = React.forwardRef<HTMLButtonElement, MultiSelectProps>
 						ref={ref}
 						{...props}
 						onClick={handleTogglePopover}
-						className={cn('flex w-full p-1 rounded-md border min-h-10 h-auto items-center justify-between bg-inherit hover:bg-inherit', className)}
+						className={cn('flex p-1 h-10 w-72 min-w-fit max-w-96 rounded-md border items-center justify-between bg-inherit hover:bg-inherit', className)}
 					>
 						{selectedValues.length > 0 ? (
 							<div className='flex justify-between items-center w-full'>
