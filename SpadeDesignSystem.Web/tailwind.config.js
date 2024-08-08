@@ -1,3 +1,5 @@
+// Spade Design System - tailwind.config.js v1.0
+
 /** @type {import('tailwindcss').Config} */
 export const darkMode = ["class"];
 export const content = [
@@ -20,58 +22,58 @@ export const theme = {
   },
   extend: {
     colors: {
-      border: "var(--border)",
-      input: "var(--input)",
-      ring: "var(--ring)",
-      background: "var(--background)",
-      foreground: "var(--foreground)",
+      border: "hsl(var(--border))",
+      input: "hsl(var(--input))",
+      ring: "hsl(var(--ring))",
+      background: "hsl(var(--background))",
+      foreground: "hsl(var(--foreground))",
       brand: {
-        DEFAULT: "var(--brand)",
-        foreground: "var(--brand-foreground)",
+        DEFAULT: "hsl(var(--brand))",
+        foreground: "hsl(var(--brand-foreground))",
       },
       primary: {
-        DEFAULT: "var(--primary)",
-        foreground: "var(--primary-foreground)",
+        DEFAULT: "hsl(var(--primary))",
+        foreground: "hsl(var(--primary-foreground))",
       },
       secondary: {
-        DEFAULT: "var(--secondary)",
-        foreground: "var(--secondary-foreground)",
+        DEFAULT: "hsl(var(--secondary))",
+        foreground: "hsl(var(--secondary-foreground))",
       },
       success: {
-        DEFAULT: "var(--success)",
-        foreground: "var(--success-foreground)",
+        DEFAULT: "hsl(var(--success))",
+        foreground: "hsl(var(--success-foreground))",
       },
       warning: {
-        DEFAULT: "var(--warning)",
-        foreground: "var(--warning-foreground)",
+        DEFAULT: "hsl(var(--warning))",
+        foreground: "hsl(var(--warning-foreground))",
       },
       destructive: {
-        DEFAULT: "var(--destructive)",
-        foreground: "var(--destructive-foreground)",
+        DEFAULT: "hsl(var(--destructive))",
+        foreground: "hsl(var(--destructive-foreground))",
       },
       purple: {
-        DEFAULT: "var(--purple)",
-        foreground: "var(--purple-foreground)",
+        DEFAULT: "hsl(var(--purple))",
+        foreground: "hsl(var(--purple-foreground))",
       },
       blue: {
-        DEFAULT: "var(--blue)",
-        foreground: "var(--blue-foreground)",
+        DEFAULT: "hsl(var(--blue))",
+        foreground: "hsl(var(--blue-foreground))",
       },
       muted: {
-        DEFAULT: "var(--muted)",
-        foreground: "var(--muted-foreground)",
+        DEFAULT: "hsl(var(--muted))",
+        foreground: "hsl(var(--muted-foreground))",
       },
       accent: {
-        DEFAULT: "var(--accent)",
-        foreground: "var(--accent-foreground)",
+        DEFAULT: "hsl(var(--accent))",
+        foreground: "hsl(var(--accent-foreground))",
       },
       popover: {
-        DEFAULT: "var(--popover)",
-        foreground: "var(--popover-foreground)",
+        DEFAULT: "hsl(var(--popover))",
+        foreground: "hsl(var(--popover-foreground))",
       },
       card: {
-        DEFAULT: "var(--card)",
-        foreground: "var(--card-foreground)",
+        DEFAULT: "hsl(var(--card))",
+        foreground: "hsl(var(--card-foreground))",
       },
     },
     borderRadius: {
