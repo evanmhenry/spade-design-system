@@ -1,4 +1,4 @@
-/* Spade Design System - index.css v1.0 */
+/* Spade Design System - index.css v1.1 */
 
 @tailwind base;
 @tailwind components;
@@ -120,8 +120,20 @@
 	body {
 		@apply bg-background text-foreground;
 	}
+	h1 {
+		@apply text-4xl font-extrabold;
+	}
+	h2 {
+		@apply text-3xl font-semibold;
+	}
 	h3 {
 		@apply text-2xl font-semibold;
+	}
+	h4 {
+		@apply text-xl font-semibold;
+	}
+	p {
+		@apply leading-7 [&:not(:first-child)]:mt-6;
 	}
 }
 
