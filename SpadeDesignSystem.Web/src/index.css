@@ -4,48 +4,48 @@
 
 @layer base {
 	:root {
-		--brand: 25 95% 53%;
-		--brand-foreground: 0 0% 98%;
+		--brand: hsl(25, 95%, 53%); /* Orange-500 */
+		--brand-foreground: hsl(0, 0%, 98%); /* Zinc-50 */
 
-		--background: 0 0% 100%;
-		--foreground: 240 10% 3.9%;
+		--background: hsl(0, 0%, 100%); /* White */
+		--foreground: hsl(240, 10%, 4%); /* Zinc-950 */
 
-		--card: 0 0% 100%;
-		--card-foreground: 240 10% 3.9%;
+		--card: hsl(0, 0%, 100%); /* White */
+		--card-foreground: hsl(240, 10%, 4%); /* Zinc-950 */
 
-		--popover: 0 0% 100%;
-		--popover-foreground: 240 10% 3.9%;
+		--popover: hsl(0, 0%, 100%); /* White */
+		--popover-foreground: hsl(240, 10%, 4%); /* Zinc-950 */
 
-		--primary: 240 5.9% 10%;
-		--primary-foreground: 0 0% 98%;
+		--primary: hsl(240, 6%, 10%); /* Zinc-900 */
+		--primary-foreground: hsl(0, 0%, 98%); /* Zinc-50 */
 
-		--secondary: 240 4.8% 95.9%;
-		--secondary-foreground: 240 5.9% 10%;
+		--secondary: hsl(240, 5%, 96%); /* Zinc-100 */
+		--secondary-foreground: hsl(240, 6%, 10%); /* Zinc-900 */
 
-		--muted: 240 4.8% 95.9%;
-		--muted-foreground: 240 3.8% 46.1%;
+		--muted: hsl(240, 5%, 96%); /* Zinc-100 */
+		--muted-foreground: hsl(240, 4%, 46%); /* Zinc-500 */
 
-		--accent: 240 4.8% 95.9%;
-		--accent-foreground: 240 5.9% 10%;
+		--accent: hsl(240, 5%, 96%); /* Zinc-100 */
+		--accent-foreground: hsl(240, 6%, 10%); /* Zinc-900 */
 
-		--success: 142 71% 45%;
-		--success-foreground: 0 0% 98%;
+		--success: hsl(142, 71%, 45%); /* GREEN-500 */
+		--success-foreground: hsl(0, 0%, 98%); /* Zinc-50 */
 
-		--warning: 38 92% 50%;
-		--warning-foreground: 0 0% 98%;
+		--warning: hsl(38 92% 50%); /* Amber-500 */
+		--warning-foreground: hsl(0, 0%, 98%); /* Zinc-50 */
 
-		--destructive: 0 84.2% 60.2%;
-		--destructive-foreground: 0 0% 98%;
+		--destructive: hsl(0, 84%, 60%); /* RED-500 */
+		--destructive-foreground: hsl(0, 0%, 98%); /* Zinc-50 */
 
-		--purple: 258 90% 66%;
-		--purple-foreground: 0 0% 98%;
+		--purple: hsl(258 90% 66%); /* Violet-500 */
+		--purple-foreground: hsl(0, 0%, 98%); /* Zinc-50 */
 
-		--blue: 217 91% 60%;
-		--blue-foreground: 0 0% 98%;
+		--blue: hsl(217 91% 60%); /* Blue-500 */
+		--blue-foreground: hsl(0, 0%, 98%); /* Zinc-50 */
 
-		--border: 240 5.9% 90%;
-		--input: 240 5.9% 90%;
-		--ring: 240 10% 3.9%;
+		--border: hsl(240, 6%, 90%); /* Zinc-200 */
+		--input: hsl(240, 6%, 90%); /* Zinc-200 */
+		--ring: hsl(240, 10%, 4%); /* Zinc-950 */
 
 		--radius: 0.5rem;
 
@@ -58,48 +58,48 @@
 
 	/* TODO: fix dark mode color palette */
 	.dark {
-		--brand: 25 95% 53%;
-		--brand-foreground: 0 0% 98%;
+		--brand: hsl(21, 90%, 48%); /* Orange-600 */
+		--brand-foreground: hsl(0, 0%, 98%); /* Zinc-50 */
 
-		--background: 240 10% 3.9%;
-		--foreground: 0 0% 98%;
+		--background: hsl(240, 10%, 4%); /* Zinc-950 */
+		--foreground: hsl(0, 0%, 98%); /* Zinc-50 */
 
-		--card: 240 10% 3.9%;
-		--card-foreground: 0 0% 98%;
+		--card: hsl(240, 10%, 4%); /* Zinc-950 */
+		--card-foreground: hsl(0, 0%, 98%); /* Zinc-50 */
 
-		--popover: 240 10% 3.9%;
-		--popover-foreground: 0 0% 98%;
+		--popover: hsl(240, 10%, 4%); /* Zinc-950 */
+		--popover-foreground: hsl(0, 0%, 98%); /* Zinc-50 */
 
-		--primary: 0 0% 98%;
-		--primary-foreground: 240 5.9% 10%;
+		--primary: hsl(0, 0%, 98%); /* Zinc-50 */
+		--primary-foreground: hsl(240, 6%, 10%); /* Zinc-900 */
 
-		--secondary: 240 3.7% 15.9%;
-		--secondary-foreground: 0 0% 98%;
+		--secondary: hsl(240, 4%, 16%); /* Zinc-800 */
+		--secondary-foreground: hsl(0, 0%, 98%); /* Zinc-50 */
 
-		--muted: 240 3.7% 15.9%;
-		--muted-foreground: 240 5% 64.9%;
+		--muted: hsl(240, 4%, 16%); /* Zinc-800 */
+		--muted-foreground: hsl(240, 5%, 65%); /* Zinc-400 */
 
-		--accent: 240 3.7% 15.9%;
-		--accent-foreground: 0 0% 98%;
+		--accent: hsl(240, 4%, 16%); /* Zinc-800 */
+		--accent-foreground: hsl(0, 0%, 98%); /* Zinc-50 */
 
-		--success: 142 53% 40%; /* Adjusted green */
-		--success-foreground: 0 0% 98%;
+		--success: hsl(142, 76%, 36%); /* Green-600 */
+		--success-foreground: hsl(0, 0%, 98%); /* Zinc-50 */
 
-		--warning: 48 80% 50%; /* Adjusted yellow */
-		--warning-foreground: 38 92% 50%;
+		--warning: hsl(32, 95%, 44%); /* Amber-600 */
+		--warning-foreground: hsl(0, 0%, 98%); /* Zinc-50 */
 
-		--destructive: 0 62.8% 40%; /* Adjusted red */
-		--destructive-foreground: 0 0% 98%;
+		--destructive: hsl(0, 72%, 51%); /* Red-600 */
+		--destructive-foreground: hsl(0, 0%, 98%); /* Zinc-50 */
 
-		--purple: 258 60% 50%; /* Adjusted purple */
-		--purple-foreground: 0 0% 98%;
+		--purple: hsl(262, 83%, 58%); /* Violet-600 */
+		--purple-foreground: hsl(0, 0%, 98%); /* Zinc-50 */
 
-		--blue: 217 72% 50%; /* Adjusted blue */
-		--blue-foreground: 0 0% 98%;
+		--blue: hsl(221, 83%, 53%); /* Blue-600 */
+		--blue-foreground: hsl(0, 0%, 98%); /* Zinc-50 */
 
-		--border: 240 3.7% 15.9%;
-		--input: 240 3.7% 15.9%;
-		--ring: 240 4.9% 83.9%;
+		--border: hsl(240, 4%, 16%); /* Zinc-800 */
+		--input: hsl(240, 4%, 16%); /* Zinc-800 */
+		--ring: hsl(240, 5%, 84%); /* Zinc-300 */
 
 		--radius: 0.5rem;
 
