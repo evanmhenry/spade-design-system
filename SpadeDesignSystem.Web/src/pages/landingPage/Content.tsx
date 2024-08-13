@@ -1,11 +1,10 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable react-refresh/only-export-components */
 import { Link } from 'react-router-dom'
-import { DiscordIcon, DribbbleIcon, FacebookIcon, GitHubIcon, InstagramIcon, LinkedInIcon, ThreadsIcon, TikTokIcon, TwitterIcon, YouTubeIcon } from '@/components/icons/SocialIcon'
+import { GitHubIcon, InstagramIcon, TwitterIcon } from '@/components/icons/SocialIcon'
 
 export const SITE_NAME = 'Spade UI'
 
 const EMAIL = 'info@placeholder.com'
-const SUBJECT = 'General Inquiry'
 
 export const PrimaryCta = 'Contact Us'
 export const SecondaryCta = 'Learn More'
