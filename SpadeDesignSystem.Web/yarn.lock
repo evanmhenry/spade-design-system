@@ -1271,6 +1271,11 @@
   resolved "https://registry.yarnpkg.com/@tanstack/table-core/-/table-core-8.17.3.tgz#d7a9830abb29cd369b52b2a7159dc0360af646fd"
   integrity sha512-mPBodDGVL+fl6d90wUREepHa/7lhsghg2A3vFpakEhrhtbIlgNAZiMr7ccTgak5qbHqF14Fwy+W1yFWQt+WmYQ==
 
+"@tldraw/vec@^1.4.3":
+  version "1.9.2"
+  resolved "https://registry.yarnpkg.com/@tldraw/vec/-/vec-1.9.2.tgz#0b4719fd44dee57c414b82af8b38c2ccdbd27fef"
+  integrity sha512-k9vH52MRpJHjVcaahWu6VqvhLeE9h1qL5Z2gLobS9zTMpUJ59kBQPNo0VPzPlDYBpXdS4GxuB4jYQMnKvuPAZg==
+
 "@types/babel__core@^7.20.5":
   version "7.20.5"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.20.5.tgz#3df15f27ba85319caa07ba08d0721889bb39c017"
@@ -2641,6 +2646,13 @@ path-type@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
+
+perfect-cursors@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/perfect-cursors/-/perfect-cursors-1.0.5.tgz#79b8c04790172bac833a0767a83f376d7e59ca86"
+  integrity sha512-LgQJj6QtF6VzYODurlhF9Ayt2liiadJZBocK98brcCC6D/dRtZlSU/r0mXWDoCdGPiO24oJB1+PZKz4p9hblWg==
+  dependencies:
+    "@tldraw/vec" "^1.4.3"
 
 picocolors@^1.0.0, picocolors@^1.0.1:
   version "1.0.1"
