@@ -2,7 +2,7 @@ import * as React from 'react'
 import { cva, type VariantProps } from 'class-variance-authority'
 import { CheckIcon, XCircle, ChevronDown, XIcon, WandSparkles } from 'lucide-react'
 
-import { cn } from '@/lib/Utils'
+import { cn } from '@/lib/utils1'
 import { Separator } from '@/components/ui/Separator'
 import { Button } from '@/components/ui/Button'
 import { Badge } from '@/components/ui/Badge'
