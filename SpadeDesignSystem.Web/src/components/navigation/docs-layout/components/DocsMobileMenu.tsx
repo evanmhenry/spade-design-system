@@ -2,7 +2,7 @@ import { Drawer, DrawerClose, DrawerContent, DrawerTrigger } from '@/components/
 import { ChevronRight, PanelLeftOpen, X } from 'lucide-react'
 import { useState } from 'react'
 import { useLocation } from 'react-router-dom'
-import { NavSections } from './DocsSideMenu'
+import NavSections from './DocsSideMenu'
 
 const DocsMobileMenu = () => {
 	const location = useLocation()
