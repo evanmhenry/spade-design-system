@@ -12,6 +12,7 @@ import GettingStartedPage from '@/pages/docs/GettingStartedPage'
 import WebLayout from './web-layout/WebLayout'
 import DocsLayout from './docs-layout/DocsLayout'
 import GuidesPage from '@/pages/docs/GuidesPage'
+import WebSocketsPage from '@/pages/WebSocketsPage'
 
 const BrowserRouter = createBrowserRouter([
 	{
@@ -62,6 +63,10 @@ const BrowserRouter = createBrowserRouter([
 			{
 				path: 'inputs',
 				element: <InputsPage />,
+			},
+			{
+				path: 'web-sockets',
+				element: <WebSocketsPage />,
 			},
 			{
 				path: 'settings',
