@@ -21,7 +21,7 @@ const renderCursors = (users: any, currentUser: string) => {
 const WebSocketsPage = () => {
 	const [user, setUser] = useState(null)
 
-	return user ? <WebSocketApp user={user} /> : <WebSocketLogin setUser={setUser} />
+	return user ? <WebSocketApp user={user} setUser={setUser} /> : <WebSocketLogin setUser={setUser} />
 }
 
 export default WebSocketsPage
@@ -69,9 +69,10 @@ const WebSocketLogin = ({ setUser }: WebSocketLoginProps) => {
 
 type WebSocketAppProps = {
 	user: string
+	setUser: (user: any) => void
 }
 
-const WebSocketApp = ({ user }: WebSocketAppProps) => {
+const WebSocketApp = ({ user, setUser }: WebSocketAppProps) => {
 	const WS_URL = 'ws://127.0.2.2:5173'
 
 	const { sendJsonMessage, lastJsonMessage } = useWebSocket(WS_URL, {
@@ -91,7 +92,14 @@ const WebSocketApp = ({ user }: WebSocketAppProps) => {
 	}, [])
 
 	if (lastJsonMessage) {
-		return <>{renderCursors(lastJsonMessage, user)}</>
+		return (
+			<>
+				{renderCursors(lastJsonMessage, user)}
+				<Button variant='destructive' onClick={() => setUser(undefined)}>
+					Disconnect
+				</Button>
+			</>
+		)
 	}
 
 	return (
