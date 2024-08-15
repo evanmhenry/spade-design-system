@@ -1,7 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import { Settings } from 'lucide-react'
 import Logo from '@/assets/spade-software-icon.svg'
-import { SITE_NAME } from '@/pages/landingPage/Content'
 import { NAV_OPTIONS } from './AppContent'
 
 const AppSideMenu = () => {
@@ -19,7 +18,7 @@ const AppSideMenu = () => {
 			<div className='p-3 border-b h-14 flex-shrink-0'>
 				<div className='flex items-center gap-2 text-2xl font-semibold'>
 					<img alt='Logo' className='h-8 flex-none hover:cursor-pointer' src={Logo} />
-					{SITE_NAME}
+					Spade UI
 				</div>
 			</div>
 			<div className='p-3 h-full'>
