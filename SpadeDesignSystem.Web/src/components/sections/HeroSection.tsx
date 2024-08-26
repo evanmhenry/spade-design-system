@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/Button'
 import { PrimaryCta, handlePrimaryCtaClick, HeroDescription, HeroTitle } from '@/pages/landingPage/Content'
 import { ArrowRight } from 'lucide-react'
 
-const HeroSectionV1 = () => {
+const HeroSection = () => {
 	return (
 		<section className='w-screen border-b bg-background'>
 			<div className='container flex max-w-5xl flex-col gap-8 sm:text-center items-center py-16 md:py-20 lg:py-24'>
@@ -17,16 +17,12 @@ const HeroSectionV1 = () => {
 						<Button size='lg' variant='brandGradient' onClick={handlePrimaryCtaClick} className='w-full md:w-auto'>
 							{PrimaryCta} <ArrowRight className='w-5 h-5 ml-2' />
 						</Button>
-						{/* <Button size='lg' variant='outline' onClick={onDemo} className='w-full md:w-auto'>
-							<PlayCircle className='w-5 h-5 mr-2' />
-							{SecondaryCta}
-						</Button> */}
 					</div>
 				</div>
-				{/* <img src={image} alt={image} className='aspect-video rounded-2xl' /> */}
 			</div>
 		</section>
 	)
 }
 
-export default HeroSectionV1
+export default HeroSection
+

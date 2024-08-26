@@ -3,7 +3,6 @@ import { useLocation } from 'react-router-dom'
 import { Button } from '@/components/ui/Button'
 import { Separator } from '@/components/ui/Separator'
 import { GitHubIcon } from '@/components/icons/SocialIcon'
-import { Search } from 'lucide-react'
 import { NavMenuOptions, SITE_NAME } from '@/pages/landingPage/Content'
 import HamburgerMenu from './HamburgerMenu'
 import SearchDialog from './SearchDialog'
@@ -47,7 +46,7 @@ const Header = () => {
 										<span className={`${isDocsLayout ? 'hidden' : ''} md:flex`}>{SITE_NAME}</span>
 									</div>
 								</a>
-								<Button
+								{/* <Button
 									variant='outline'
 									size='sm'
 									className={`${isDocsLayout ? '' : 'hidden'} md:flex text-muted-foreground gap-2 text-left w-56 justify-between`}
@@ -60,7 +59,7 @@ const Header = () => {
 									<kbd className='pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100'>
 										<span className='text-xs'>⌘</span>K
 									</kbd>
-								</Button>
+								</Button> */}
 								<HamburgerMenu isOpen={hamburgerMenuOpen} setIsOpen={setHamburgerMenuOpen} className='md:hidden' />
 							</div>
 							<div className='hidden md:flex gap-1 md:items-center'>

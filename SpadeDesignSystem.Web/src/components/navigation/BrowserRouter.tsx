@@ -8,10 +8,7 @@ import DataTablePage from '@/pages/DataTablePage'
 import InputsPage from '@/pages/InputsPage'
 import ButtonsPage from '@/pages/ButtonsPage'
 import LandingPage from '@/pages/landingPage/LandingPage'
-import GettingStartedPage from '@/pages/docs/GettingStartedPage'
 import WebLayout from './web-layout/WebLayout'
-import DocsLayout from './docs-layout/DocsLayout'
-import GuidesPage from '@/pages/docs/GuidesPage'
 
 const BrowserRouter = createBrowserRouter([
 	{
@@ -26,21 +23,7 @@ const BrowserRouter = createBrowserRouter([
 		errorElement: <ErrorPage />,
 	},
 	{
-		path: '/docs',
-		element: <DocsLayout />,
-		children: [
-			{
-				path: '',
-				element: <GettingStartedPage />,
-			},
-			{
-				path: 'guides',
-				element: <GuidesPage />,
-			},
-		],
-	},
-	{
-		path: '/',
+		path: 'components',
 		element: <AppLayout />,
 		children: [
 			{
