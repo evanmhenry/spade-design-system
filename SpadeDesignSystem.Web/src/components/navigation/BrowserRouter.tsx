@@ -9,6 +9,10 @@ import InputsPage from '@/pages/InputsPage'
 import ButtonsPage from '@/pages/ButtonsPage'
 import LandingPage from '@/pages/landingPage/LandingPage'
 import WebLayout from './web-layout/WebLayout'
+import DashboardPage from '@/pages/DashboardPage'
+import ComponentsPage from '@/pages/ComponentsPage'
+import ProjectsPage from '@/pages/ProjectsPage'
+import ProjectPage from '@/pages/ProjectPage'
 
 const BrowserRouter = createBrowserRouter([
 	{
@@ -23,32 +27,56 @@ const BrowserRouter = createBrowserRouter([
 		errorElement: <ErrorPage />,
 	},
 	{
-		path: 'components',
+		path: '',
 		element: <AppLayout />,
 		children: [
 			{
-				path: 'buttons',
-				element: <ButtonsPage />,
+				path: 'dashboard',
+				element: <DashboardPage />,
 			},
 			{
-				path: 'charts',
-				element: <ChartsPage />,
+				path: 'components',
+				element: <ComponentsPage />,
+				children: [
+					{
+						path: 'buttons',
+						element: <ButtonsPage />,
+					},
+					{
+						path: 'charts',
+						element: <ChartsPage />,
+					},
+					{
+						path: 'data-table',
+						element: <DataTablePage />,
+					},
+					{
+						path: 'cards',
+						element: <CardsPage />,
+					},
+					{
+						path: 'inputs',
+						element: <InputsPage />,
+					},
+					{
+						path: 'settings',
+						element: <SettingsPage />,
+					},
+				],
 			},
 			{
-				path: 'data-table',
-				element: <DataTablePage />,
-			},
-			{
-				path: 'cards',
-				element: <CardsPage />,
-			},
-			{
-				path: 'inputs',
-				element: <InputsPage />,
-			},
-			{
-				path: 'settings',
-				element: <SettingsPage />,
+				path: 'projects',
+				element: <ProjectsPage />,
+				children: [
+					{
+						path: 'pay-grids',
+						element: <ProjectPage />,
+					},
+					{
+						path: 'back-ops',
+						element: <ProjectPage />,
+					},
+				],
 			},
 		],
 		errorElement: <ErrorPage />,
