@@ -24,29 +24,65 @@ Zinc-900     #18181b   -->   240 6% 10%; /* Zinc-900 */
 Zinc-950     #09090b   -->   240 10% 4%; /* Zinc-950 */
 Black        #000000   -->   0 0% 0%; /* Black */
 
+Red-50      #fef2f2   -->   0 86% 97%; /* Red-50 */
+Red-100     #fee2e2   -->   0 93% 94%; /* Red-100 */
+Red-200     #fecaca   -->   0 96% 89%; /* Red-200 */
+Red-300     #fca5a5   -->   0 94% 82%; /* Red-300 */
 Red-400     #f87171   -->   0 91% 71%; /* Red-400 */
 Red-500     #ef4444   -->   0 84% 60%; /* Red-500 */
 Red-600     #dc2626   -->   0 72% 51%; /* Red-600 */
+Red-700     #b91c1c   -->   0 74% 42%; /* Red-700 */
+Red-800     #991b1b   -->   0 70% 35%; /* Red-800 */
+Red-900     #7f1d1d   -->   0 74% 28%; /* Red-900 */
+Red-950     #450a0a   -->   0 75% 15%; /* Red-950 */
 
+Orange-50      #fff7ed   -->   37 100% 96%; /* Orange-50 */
+Orange-100     #ffedd5   -->   34 100% 92%; /* Orange-100 */
+Orange-200     #fed7aa   -->   32 98% 83%; /* Orange-200 */
+Orange-300     #fdba74   -->   31 97% 72%; /* Orange-300 */
 Orange-400     #fb923c   -->   27 96% 61%; /* Orange-400 */
 Orange-500     #f97316   -->   25 95% 53%; /* Orange-500 */
 Orange-600     #ea580c   -->   21 90% 48%; /* Orange-600 */
 Orange-700     #c2410c   -->   17 88% 40%; /* Orange-700 */
+Orange-800     #9a3412   -->   15 75% 33%; /* Orange-800 */
+Orange-900     #7c2d12   -->   13 81% 29%; /* Orange-900 */
+Orange-950     #431407   -->   13 75% 15%; /* Orange-950 */
 
+Amber-50      #fffbeb   -->   45 100% 96%; /* Amber-50 */
+Amber-100     #fef3c7   -->   48 96% 89%; /* Amber-100 */
+Amber-200     #fde68a   -->   48 96% 77%; /* Amber-200 */
+Amber-300     #fcd34d   -->   46 97% 65%; /* Amber-300 */
 Amber-400     #fbbf24   -->   43 96% 56%; /* Amber-400 */
 Amber-500     #f59e0b   -->   38 92% 50%; /* Amber-500 */
 Amber-600     #d97706   -->   32 95% 44%; /* Amber-600 */
 Amber-700     #b45309   -->   26 90% 37%; /* Amber-700 */
+Amber-800     #92400e   -->   23 82% 31%; /* Amber-800 */
+Amber-900     #78350f   -->   22 78% 26%; /* Amber-900 */
+Amber-950     #451a03   -->   21 92% 14%; /* Amber-950 */
 
+Green-50      #f0fdf4   -->   138 76% 97%; /* Green-50 */
+Green-100     #dcfce7   -->   141 84% 93%; /* Green-100 */
+Green-200     #bbf7d0   -->   142 76% 85%; /* Green-200 */
+Green-300     #86efac   -->   142 76% 73%; /* Green-300 */
 Green-400     #4ade80   -->   142 69% 58%; /* Green-400 */
 Green-500     #22c55e   -->   142 71% 45%; /* Green-500 */
 Green-600     #16a34a   -->   142 76% 36%; /* Green-600 */
 Green-700     #15803d   -->   142 72% 29%; /* Green-700 */
+Green-800     #166534   -->   142 70% 24%; /* Green-800 */
+Green-900     #14532d   -->   142 61% 20%; /* Green-900 */
+Green-950     #052e16   -->   142 64% 10%; /* Green-950 */
 
+Emerald-50      #ecfdf5   -->   151 81% 96%; /* Emerald-50 */
+Emerald-100     #d1fae5   -->   149 80% 90%; /* Emerald-100 */
+Emerald-200     #a7f3d0   -->   152 76% 80%; /* Emerald-200 */
+Emerald-300     #6ee7b7   -->   156 72% 67%; /* Emerald-300 */
 Emerald-400     #34d399   -->   158 64% 52%; /* Emerald-400 */
 Emerald-500     #10b981   -->   160 84% 39%; /* Emerald-500 */
 Emerald-600     #059669   -->   161 94% 30%; /* Emerald-600 */
 Emerald-700     #047857   -->   163 94% 24%; /* Emerald-700 */
+Emerald-800     #065f46   -->   164 85% 20%; /* Emerald-800 */
+Emerald-900     #064e3b   -->   166 91% 16%; /* Emerald-900 */
+Emerald-950     #022c22   -->   167 100% 9%; /* Emerald-950 */
 
 Teal-400     #2dd4bf   -->   172 66% 50%; /* Teal-400 */
 Teal-500     #14b8a6   -->   173 80% 40%; /* Teal-500 */
@@ -63,20 +99,41 @@ Sky-500     #0ea5e9   -->   199 89% 48%; /* Sky-500 */
 Sky-600     #0284c7   -->   200 98% 39%; /* Sky-600 */
 Sky-700     #0369a1   -->   201 96% 32%; /* Sky-700 */
 
+Blue-50      #eff6ff   -->   213 100% 97%; /* Blue-50 */
+Blue-100     #dbeafe   -->   214 95% 93%; /* Blue-100 */
+Blue-200     #bfdbfe   -->   213 97% 87%; /* Blue-200 */
+Blue-300     #93c5fd   -->   212 96% 78%; /* Blue-300 */
 Blue-400     #60a5fa   -->   213 94% 68%; /* Blue-400 */
 Blue-500     #3b82f6   -->   217 91% 60%; /* Blue-500 */
 Blue-600     #2563eb   -->   221 83% 53%; /* Blue-600 */
 Blue-700     #1d4ed8   -->   224 76% 48%; /* Blue-700 */
+Blue-800     #1e40af   -->   226 71% 40%; /* Blue-800 */
+Blue-900     #1e3a8a   -->   224 64% 33%; /* Blue-900 */
+Blue-950     #172554   -->   226 57% 21%; /* Blue-950 */
 
+Indigo-50      #EEF2FF   -->   226 100% 94%; /* Indigo-50 */
+Indigo-100     #E0E7FF   -->   228 100% 94%; /* Indigo-100 */
+Indigo-200     #C7D2FE   -->   231 100% 89%; /* Indigo-200 */
+Indigo-300     #A5B4FC   -->   230 94% 82%; /* Indigo-300 */
 Indigo-400     #818cf8   -->   234 89% 74%; /* Indigo-400 */
 Indigo-500     #6366f1   -->   239 84% 67%; /* Indigo-500 */
 Indigo-600     #4f46e5   -->   243 75% 59%; /* Indigo-600 */
 Indigo-700     #4338ca   -->   245 58% 51%; /* Indigo-700 */
+Indigo-800     #3730A3   -->   243 75% 42%; /* Indigo-800 */
+Indigo-900     #312E81   -->   245 81% 35%; /* Indigo-900 */
+Indigo-950     #1E1B4B   -->   244 84% 20%; /* Indigo-950 */
 
+Violet-50      #F5F3FF   -->   250 100% 98%; /* Violet-50 */
+Violet-100     #EDE9FE   -->   249 84% 94%;  /* Violet-100 */
+Violet-200     #DDD6FE   -->   250 93% 90%;  /* Violet-200 */
+Violet-300     #C4B5FD   -->   252 94% 86%;  /* Violet-300 */
 Violet-400     #a78bfa   -->   255 92% 76%; /* Violet-400 */
 Violet-500     #8b5cf6   -->   258 90% 66%; /* Violet-500 */
 Violet-600     #7c3aed   -->   262 83% 58%; /* Violet-600 */
 Violet-700     #6d28d9   -->   263 70% 50%; /* Violet-700 */
+Violet-800     #5B21B6   -->   267 71% 42%;  /* Violet-800 */
+Violet-900     #4C1D95   -->   268 68% 34%;  /* Violet-900 */
+Violet-950     #2E1065   -->   273 75% 23%;  /* Violet-950 */
 
 Purple-400     #c084fc   -->   270 95% 75%; /* Purple-400 */
 Purple-500     #a855f7   -->   271 91% 65%; /* Purple-500 */
